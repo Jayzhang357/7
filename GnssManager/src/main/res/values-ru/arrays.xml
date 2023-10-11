@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ControlType">
+        <item>Гидравлический</item>
+        <item>Механический</item>
+    </string-array>
+    <string-array name="GpsPositionType">
+        <item>Нет</item>
+        <item>АВТО</item>
+        <item>Дифф</item>
+        <item>SBAS</item>
+        <item>Фикс</item>
+        <item>Плав</item>
+        <item>Нет</item>
+        <item>RTK_Плав</item>
+        <item>Нет</item>
+        <item>WASS</item>
+    </string-array>
+    <string-array name="RadioModel">
+        <item>Rx</item>
+        <item>Tx</item>
+        <item>Rx/Tx</item>
+    </string-array>
+    <string-array name="RadioPower">
+        <item>Низкая</item>
+        <item>Средняя</item>
+        <item>Высокая</item>
+    </string-array>
+</resources>

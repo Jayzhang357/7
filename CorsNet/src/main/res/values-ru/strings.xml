@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_versionName">В1.0.6</string>
+    <string name="app_version">Версия</string>
+    <string name="source_point">Получить</string>
+    <!-- network.xml -->
+    <string name="net_connetion">Интернет</string>
+    <string name="net_none_connetion">Отключено</string>
+    <string name="src_node_error">Не удалось получить исходный узел! \nЕсли вы используете исходный VRS, пожалуйста введите исходный узел. \nЕсли нет, проверьте IP и номер порта!</string>
+    <string name="machine_number">Серийный номер</string>
+    <string name="user_group">Группа</string>
+    <string name="work_group">Рабочая группа</string>
+    <string name="net_setting">Настройки сети</string>
+    <string name="main_lat">Широта</string>
+    <string name="main_lon">Долгота</string>
+    <string name="main_al">Высота</string>
+    <string name="main_hdop">HDOP</string>
+    <string name="main_type">Решение</string>
+    <string name="main_sate">Спутники</string>
+    <string name="main_age">Залержка</string>
+    <string name="main_base">База</string>
+    <string name="main_null">Нет</string>
+    <string name="main_btn_accout">Конфигурация</string>
+    <string name="main_btn_start">Соединение</string>
+    <string name="main_btn_close">Отключить</string>
+    <string name="btn_cancel">Отменить</string>
+    <string name="btn_submit">Подтвердить</string>
+    <string name="accout_host">IP</string>
+    <string name="accout_port">Порт</string>
+    <string name="accout_username">Логин</string>
+    <string name="accout_password">Пароль</string>
+    <string name="accout_source">Узел</string>
+    <string name="accout_NetType">Тип сети</string>
+    <string name="toast_connection_mistake">Ошибка сети</string>
+    <string name="toast_connection_success">Успешное соединение</string>
+    <string name="toast_connection_fail">Ошибка соединения</string>
+    <string name="toast_fail_reconnection">Ошибка соединения, переподключение...</string>
+    <string name="toast_userpassword_fail">Неверный логин или пароль</string>
+    <string name="toast_no_response">Сервер не отвечает</string>
+    <string name="toast_no_response_reconnection">Сервер не отвечает, переподключение...</string>
+    <string name="toast_auth_401">Логин занят</string>
+    <string name="toast_no_network">Сеть не доступна</string>
+    <string name="toast_input_error">Ошибка ввода</string>
+    <string name="progress_wait">Получение исходных данных...</string>
+    <string name="receivingdate">Поиск сети...</string>
+    <string name="connectingServer">Подключение к серверу...</string>
+    <string name="option">Подсказка</string>
+    <string name="disconnect">Сервер отключен</string>
+    <string name="inputSourcenode">Входные данные</string>
+    <string name="selectSourcenode">Выберите исходные данные</string>
+
+    <!-- 北斗星通 -->
+    <string name="bdxtdiff">BDStar сервис</string>
+    <string name="sim_number">Номер СИМ</string>
+    <string name="diff_format">Формат</string>
+    <string name="bdxt_serial_port">Порт</string>
+    <string name="bdxt_serial_baudrate">Скорость</string>
+    <string name="setsuccess">Успешно!</string>
+    <!-- Toast -->
+    <string name="toast_ip_null">Поле IP не может бы пустым!</string>
+    <string name="toast_port_null">Поле Порт не может бы пустым!</string>
+    <string name="toast_user_null">Поле Логин не может бы пустым!</string>
+    <string name="toast_password_null">Поле Пароль не может бы пустым!</string>
+    <string name="toast_node_null">Поле Данных не может бы пустым!</string>
+    <string name="toast_machine_null">Поле Серийный номер не может бы пустым!</string>
+    <string name="toast_work_group_null">Поле Рабочая группа не может бы пустым!</string>
+    <string name="toast_sim_null">Поле номер СИМ не может бы пустым!</string>
+    <string name="toast_serial_port_null">Поле Порт не может бы пустым!</string>
+    <string name="toast_net_param">Пожалуйста сначала введите настройки сети!</string>
+    <!-- 源节点信息 -->
+    <string name="source_node">Исходные данные</string>
+    <string name="source_node_name">Имя исходных данных:</string>
+    <string name="source_node_detail">Детали исходных данных:</string>
+    <string name="source_node_identifier">ID:</string>
+    <string name="source_node_fomat">Формат:</string>
+    <string name="source_node_carrier">Фаза:</string>
+    <string name="source_node_gnss">GNSS:</string>
+    <string name="source_node_network">Сеть:</string>
+    <string name="source_node_country">Страна:</string>
+    <string name="source_node_location">Локация:</string>
+    <string name="source_node_nmea">NMEA:</string>
+    <string name="source_node_solution">Решение:</string>
+    <string name="source_node_generator">Гненератор:</string>
+    <string name="source_node_authenticaiton">Аутентификация:</string>
+    <string name="source_node_fee">Плата:</string>
+    <string name="source_node_rate">Скорость:</string>
+    <string name="source_node_no">Опция не действительна!</string>
+    <string name="source_node_no_check">Пожалуйста выберите!</string>
+    <string name="net_cors_set">Настройки сети</string>
+    <string name="cors_net_config">Настройки соединения</string>
+    <string name="cors_node_info">Информация</string>
+
+</resources>

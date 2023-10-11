@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="NetType">
+        <item>V R S پايدىلىنىش پونكىتى </item>
+        <item>جۇڭخەيدا تورى</item>
+        <item> يەتتە قاراقچى يۇلتۇزى تورى </item>
+    </string-array>
+    <string-array name="NetType1">
+        <item>VRSپايدىلىنىش پونكىتى</item>
+        <item>جۇڭخەيدا تورى</item>
+    </string-array>
+    <string-array name="source_node_carrier">
+        <item>DGPS</item>
+        <item>L1</item>
+        <item>L1+L2</item>
+    </string-array>
+    <string-array name="source_node_sent">
+        <item> شۇنداق </item>
+        <item>ياق</item>
+    </string-array>
+    <string-array name="source_node_solution">
+        <item>  يەككە ئاساسىي پونكىت </item>
+        <item>VRSپايدىلىنىش پونكىتى</item>
+    </string-array>
+    <string-array name="source_node_authentication">
+        <item>يوق</item>
+        <item> ئاساس </item>
+        <item>ق </item>
+    </string-array>
+    <string-array name="source_node_fee">
+        <item> شۇنداق </item>
+        <item>ياق</item>
+    </string-array>
+
+</resources>

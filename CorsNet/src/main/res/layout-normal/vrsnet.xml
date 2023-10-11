@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/fill.vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:background="@drawable/bo_box"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/fill.horizontal"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="@string/accout_host"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_size_big" />
+
+        <EditText
+            android:id="@+id/vrs_edit_host"
+            style="@style/fill.horizontal.right"
+            android:layout_weight="5"
+            android:digits="@string/limit_input_ip"
+            android:inputType="phone"
+            android:ems="10"
+            android:textSize="@dimen/text_size_big" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill.vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:background="@drawable/bo_box"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/fill.horizontal"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="@string/accout_port"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_size_big" />
+
+        <EditText
+            android:id="@+id/vrs_edit_port"
+            style="@style/fill.horizontal.right"
+            android:layout_weight="5"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textSize="@dimen/text_size_big" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill.vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:background="@drawable/bo_box"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/fill.horizontal"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="@string/accout_username"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_size_big" />
+
+        <EditText
+            android:id="@+id/vrs_edit_username"
+            style="@style/fill.horizontal.right"
+            android:layout_weight="5"
+            android:ems="10"
+            android:inputType="textUri"
+            android:textSize="@dimen/text_size_big" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill.vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:background="@drawable/bo_box"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/fill.horizontal"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="@string/accout_password"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_size_big" />
+
+        <EditText
+            android:id="@+id/vrs_edit_password"
+            style="@style/fill.horizontal.right"
+            android:layout_weight="5"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textSize="@dimen/text_size_big" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/fill.vertical"
+        android:layout_margin="5dp"
+        android:layout_weight="2"
+        android:background="@drawable/bo_box"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/fill.horizontal"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:text="@string/accout_source"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_size_big" />
+
+        <EditText
+            android:id="@+id/vrs_edit_source"
+            style="@style/fill.horizontal.right"
+            android:layout_weight="4" >
+        </EditText>
+
+        <Button
+            android:id="@+id/vrs_btn_source"
+            style="@style/fill.horizontal"
+            android:layout_weight="1"
+            android:hint="@string/source_point"
+            android:textSize="@dimen/text_size_big" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

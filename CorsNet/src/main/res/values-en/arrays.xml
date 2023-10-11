@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="NetType">
+        <item >VRS</item>
+        <item >Hi-Target</item>
+        <item >BDstar</item>
+    </string-array>
+    
+    <string-array name="NetType1">
+        <item >VRS</item>
+        <item >Hi-Target</item>
+    </string-array>
+    
+    <string-array name="source_node_carrier">
+        <item >DGPS</item>
+        <item >L1</item>
+        <item >L1+L2</item>
+    </string-array>
+    
+    <string-array name="source_node_sent">
+        <item >Yes</item>
+        <item >No</item>
+    </string-array>
+    
+    <string-array name="source_node_solution">
+        <item >Single Base</item>
+        <item >VRS</item>
+    </string-array>
+    
+    <string-array name="source_node_authentication">
+        <item >None</item>
+        <item >Basic</item>
+        <item >Abstract</item>
+    </string-array>
+    
+    <string-array name="source_node_fee">
+        <item >Yes</item>
+        <item >No</item>
+    </string-array>
+</resources>

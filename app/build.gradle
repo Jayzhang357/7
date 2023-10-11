@@ -1,0 +1,99 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+
+    lintOptions {
+        abortOnError false //不在error情况下中断
+        disable 'MissingTranslation' //无视字符串缺少本地化的情况
+        disable 'ExtraTranslation'//无视多做了本地化的字符串
+    }
+
+    defaultConfig {
+        applicationId "com.zhd.shj"
+        minSdkVersion 17
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters 'armeabi', 'x86_64', 'x86'
+//, 'armeabi-v7a', 'x86_64', 'arm64-v8a', mips, mips64...加入需要生成的文件夹
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file('D:/android10.jks') // 你的 keystore 文件路径
+            storePassword '123456'
+            keyAlias 'android10'
+            keyPassword '123456'
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+repositories {
+    flatDir { dirs 'libs' }
+}
+dependencies {
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation 'com.github.bumptech.glide:glide:4.4.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.4.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation project(path: ':SerialPortManage')
+    implementation project(path: ':GpsInterfaces')
+    implementation project(path: ':MotherBoardManage')
+    implementation project(path: ':GpsModels')
+    implementation project(path: ':CommonUtilty')
+    implementation project(path: ':DataManageTemplate')
+    implementation project(path: ':GnssManager')
+    implementation project(path: ':GnssManager')
+    implementation project(path: ':AgricultureClient')
+    implementation project(path: ':TCPSocketClientBase')
+    implementation files('libs\\ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar')
+    implementation files('libs\\serialport.jar')
+    implementation files('libs\\JavaCoordLib.jar')
+    implementation files('libs\\commondata.jar')
+    implementation project(path: ':AgricultureClient')
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.1'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
+    implementation project(path: ':CorsNet')
+    implementation project(path: ':ZHDCorsNet')
+    compile(name: 'libqxwz_release_v1.1.0', ext: 'aar')
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

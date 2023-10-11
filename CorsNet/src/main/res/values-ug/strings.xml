@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_versionName">V1.0.6</string>
+    <string name="app_version">نۇسخا نومۇرى</string>
+    <string name="source_point"> ئىگە بولماق </string>
+    <!-- network.xml -->
+    <string name="net_connetion">تور ئۇلاش</string>
+    <string name="net_none_connetion">ئۇلانمىغان مۇلازىمەتچى</string>
+    <string name="src_node_error">مەنبە تۈگۈنىگە ئېرىشىش مەغلۇپ بولدى ! ئەگەر جۇڭخەيدا V R S نى ئىشلىتىشنى مۇقىملاشتۇرسىڭىز مەنبە تۈگۈنىنى كىرگۈزۈڭ . ئەگەر I P ۋە ئېغىز نومۇرى توغرا كىرگۈزۈلدىمۇ - يوق تەكشۈرۈڭ !</string>
+    <string name="machine_number">ئەسۋاب نومۇرى</string>
+    <string name="user_group">گۇرۇپپا </string>
+    <string name="work_group"> خىزمەت گۇرۇپپىسى</string>
+    <string name="net_setting">تور بەلگىلەش </string>
+    <string name="main_lat"> ق </string>
+    <string name="main_lon">ئۇزۇنلۇق</string>
+    <string name="main_al">ئېگىزلىك</string>
+    <string name="main_hdop">HDOP</string>
+    <string name="main_type">يېشىم تىپى</string>
+    <string name="main_sate">سۈنئىي ھەمراھ ئىشلىتىش</string>
+    <string name="main_age">دىففېرېنسىئال ياش مەزگىلى</string>
+    <string name="main_base"> ئاساسىي پونكىتID</string>
+    <string name="main_null"> ئىشلەتكىلى بولمايدۇ </string>
+    <string name="main_btn_accout">سەپلىمەك</string>
+    <string name="main_btn_start">ئۇلاش</string>
+    <string name="main_btn_close">ئۈزمەك</string>
+    <string name="btn_cancel">بىكار قىلماق </string>
+    <string name="btn_submit">بېكىتىش </string>
+    <string name="accout_host">تور ئادرېسى </string>
+    <string name="accout_port">ئېغىز نومۇرى</string>
+    <string name="accout_username"> نام </string>
+    <string name="accout_password">شىفىر </string>
+    <string name="accout_source">مەنبە تۈگۈن</string>
+    <string name="accout_NetType">تور تىپى </string>
+    <string name="toast_connection_mistake"> تور نورمالسىزلىقى</string>
+    <string name="toast_connection_success">ئۇلاش مۇۋەپپەقىيەتلىك بولدى </string>
+    <string name="toast_connection_fail">ئۇلاش مەغلۇپ بولدى </string>
+    <string name="toast_fail_reconnection">ئۇلاش مەغلۇپ بولدى ، ئاپتوماتىك قايتا ئۇلاش</string>
+    <string name="toast_userpassword_fail">مەخپىي نومۇر خاتا</string>
+    <string name="toast_no_response">مۇلازىمەتچى ئىنكاس يوق </string>
+    <string name="toast_no_response_reconnection">مۇلازىمەتچى ئىنكاس يوق ، ئاپتوماتىك قايتا ئۇلاش </string>
+    <string name="toast_auth_401">خېرىدار ئىگىلىۋېلىنغان</string>
+    <string name="toast_no_network"> تور ئىشلەتكىلى بولمايدۇ</string>
+    <string name="toast_input_error">كىرگۈزۈش فورماتى خاتا </string>
+    <string name="progress_wait">مەنبە تۈگۈنىگە ئېرىشىۋاتىدۇ . . .</string>
+    <string name="receivingdate">تور قوزغىتىلدى . . .</string>
+    <string name="connectingServer">مۇلازىمەتچىگە ئۇلىنىۋاتىدۇ . . .</string>
+    <string name="option">ئەسكەرتىش</string>
+    <string name="disconnect">ئۇلانمىغان مۇلازىمەتچى</string>
+    <string name="inputSourcenode">مەنبە تۈگۈن كىرگۈزۈڭ</string>
+    <string name="selectSourcenode">تاللاش مەنبەسى تۈگۈن </string>
+
+    <!-- 北斗星通 -->
+    <string name="bdxtdiff">يەتتە قاراقچى يۇلتۇز ئېقىمى پەرق تەسىس قىلىش</string>
+    <string name="sim_number">S I M كارتا نومۇرى </string>
+    <string name="diff_format"> پەرق فورماتى</string>
+    <string name="bdxt_serial_port">تىزىق شوئار </string>
+    <string name="bdxt_serial_baudrate"> بائۇد نىسبىتى</string>
+    <string name="setsuccess"> تەسىس قىلىش كۈچكە ئىگە ، مۇلازىمەت مۇۋەپپەقىيەتلىك باشلاندى ! </string>
+    <!-- Toast -->
+    <string name="toast_ip_null">i p ئادرېسى قۇرۇق بولسا بولمايدۇ !</string>
+    <string name="toast_port_null">   پورت قۇرۇق بولسا بولمايدۇ ! </string>
+    <string name="toast_user_null"> پورت قۇرۇق بولسا بولمايدۇ ! </string>
+    <string name="toast_password_null"> مەخپىي نومۇر قۇرۇق بولسا بولمايدۇ ! </string>
+    <string name="toast_node_null"> مەنبە تۈگۈن قۇرۇق بولسا بولمايدۇ !</string>
+    <string name="toast_machine_null"> ئەسۋاب نومۇرى قۇرۇق بولسا بولمايدۇ !</string>
+    <string name="toast_work_group_null"> خىزمەت گۇرۇپپىسى قۇرۇق بولسا بولمايدۇ !</string>
+    <string name="toast_sim_null"> يەرلىك كارتا نومۇرى قۇرۇق بولسا بولمايدۇ !</string>
+    <string name="toast_serial_port_null"> تىزىق شوئار قۇرۇق بولسا بولمايدۇ ! </string>
+    <string name="toast_net_param"> ئالدى بىلەن تور پارامېتىرى سەپلەڭ !</string>
+    <!-- 源节点信息 -->
+    <string name="source_node">مەنبە تۈگۈن</string>
+    <string name="source_node_name">مەنبە تۈگۈن نامى : </string>
+    <string name="source_node_detail">مەنبە تۈگۈن تەپسىلىي ئۇچۇرى :</string>
+    <string name="source_node_identifier">بەلگىسى : </string>
+    <string name="source_node_fomat">تېلېگرامما تېكىستى شەكلى :</string>
+    <string name="source_node_carrier">توشۇغۇچى فازا :</string>
+    <string name="source_node_gnss">GNSS:</string>
+    <string name="source_node_network"> تور :</string>
+    <string name="source_node_country"> دۆلەت : </string>
+    <string name="source_node_location"> ئورنى :</string>
+    <string name="source_node_nmea"> يوللاش ئورنى : </string>
+    <string name="source_node_solution">مودېل :</string>
+    <string name="source_node_generator">يۈز بەرگۈچىلەر : </string>
+    <string name="source_node_authenticaiton">ئىسپات بېرىش :</string>
+    <string name="source_node_fee"> ھەق ئېلىش :</string>
+    <string name="source_node_rate">پورتېر نىسبىتى : </string>
+    <string name="source_node_no"> مەنبە تۈگۈن مەۋجۇت ئەمەس !</string>
+    <string name="source_node_no_check">مەنبە نۇقتىسىنى تاللاڭ !</string>
+    <string name="net_cors_set">تور پەرق تەسىس قىلىش</string>
+    <string name="cors_net_config"> ئۇلىنىشنى بەلگىلەش </string>
+    <string name="cors_node_info"> تۈگۈن ئۇچۇرى </string>
+
+</resources>

@@ -1,0 +1,284 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+
+
+
+
+
+
+
+
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+
+
+
+
+
+
+
+
+
+
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="title_word">
+        <item name="android:textColor">@drawable/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="bottom_bar_button">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <!-- ListView上方标题栏 卫星号、高度角、方位角、L1 L2 四项的文字样式 -->
+    <style name="ListViewTitleTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- ListView中卫星号、高度角、方位角、L1 L2的文字样式 -->
+    <style name="ListViewItemTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="radioset_table_left">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="radioset_table_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="gnss_setting_button">
+        <item name="android:background">@drawable/button_select</item>
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+
+    <style name="radioset_table">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">@dimen/normal_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <style name="radioset_table_cell_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/normal_size</item>
+        <item name="android:paddingLeft">2dp</item>
+    </style>
+
+    <style name="radioset_table_cell_left">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:textSize">@dimen/normal_size</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">2dp</item>
+          <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="MainView_Func_btn">
+        <item name="android:padding">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="NumControl">
+        <item name="android:textSize">15pt</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="NumControl_Layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="sub_title_word">
+        <item name="android:textColor">@drawable/black</item>
+        <item name="android:textSize">15pt</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="image">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="APNTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/value_size</item>
+    </style>
+
+    <style name="APNEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">0.8</item>
+        <item name="android:textSize">@dimen/value_size</item>
+        <item name="android:textColor">@color/black</item>
+
+        <item name="android:background">@drawable/ic_edittext</item>
+        <item name="android:lines">1</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="edittext_code">
+        <item name="android:background">@drawable/ic_edittext</item>
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLength">8</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/title_size</item>
+    </style>
+
+    <style name="mainscene_top_tv">
+        <item name="android:layout_height">fill_parent</item>
+
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="code_modefy_edittext">
+        <item name="android:background">@drawable/ic_edittext</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLength">6</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ems">10</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:password">true</item>
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="code_modefy_linearlayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="code_modefy_textview">
+        <item name="android:layout_width">371dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/value_size</item>
+    </style>
+
+    <style name="edittext_normal">
+        <item name="android:background">@drawable/ic_edittext</item>
+    </style>
+
+
+    <style name="vechile_edtxt">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textSize">8pt</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:maxLength">4</item>
+    </style>
+
+    <style name="job_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">6pt</item>
+    </style>
+
+
+    <style name="text_18_ffffff">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text_16_666666">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="sdw_white">
+        <item name="android:shadowColor">#7fffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.65</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="sdw_79351b">
+        <item name="android:shadowColor">#ff79351b</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+
+    <style name="text_15_ffffff_sdw" parent="@style/sdw_79351b">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="text_15_666666_sdw" parent="@style/sdw_white">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+</resources>

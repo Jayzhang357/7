@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="NetType">
+        <item >VRS参考站</item>
+        <item >中海达网络</item>
+        <item >北斗星通网络</item>
+    </string-array>
+    
+    <string-array name="NetType1">
+        <item >VRS参考站</item>
+        <item >中海达网络</item>
+    </string-array>
+    
+    <string-array name="source_node_carrier">
+        <item >DGPS</item>
+        <item >L1</item>
+        <item >L1+L2</item>
+    </string-array>
+    
+    <string-array name="source_node_sent">
+        <item >是</item>
+        <item >否</item>
+    </string-array>
+    
+    <string-array name="source_node_solution">
+        <item >单基站</item>
+        <item >VRS参考站</item>
+    </string-array>
+    
+    <string-array name="source_node_authentication">
+        <item >无</item>
+        <item >基础</item>
+        <item >摘要</item>
+    </string-array>
+    
+    <string-array name="source_node_fee">
+        <item >是</item>
+        <item >否</item>
+    </string-array>
+</resources>

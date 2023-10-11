@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_versionName">V1.0.6</string>
+    <string name="app_version">版本号</string>
+    <string name="source_point">获取</string>
+    <!-- network.xml -->
+    <string name="net_connetion">网络连接</string>
+    <string name="net_none_connetion">未连接服务器</string>
+    <string name="src_node_error">获取源节点失败！\n如果确定使用中海达VRS请输入源节点。\n如果不是请检查IP和端口号是否输入正确！</string>
+    <string name="machine_number">仪器号</string>
+    <string name="user_group">用户组</string>
+    <string name="work_group">工作组</string>
+    <string name="net_setting">网络设置</string>
+    <string name="main_lat">纬度</string>
+    <string name="main_lon">经度</string>
+    <string name="main_al">高度</string>
+    <string name="main_hdop">HDOP</string>
+    <string name="main_type">解类型</string>
+    <string name="main_sate">使用卫星</string>
+    <string name="main_age">差分龄期</string>
+    <string name="main_base">基站ID</string>
+    <string name="main_null">不可用</string>
+    <string name="main_btn_accout">配置</string>
+    <string name="main_btn_start">连接</string>
+    <string name="main_btn_close">断开</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_submit">确定</string>
+    <string name="accout_host">网络地址</string>
+    <string name="accout_port">端口号</string>
+    <string name="accout_username">用户名</string>
+    <string name="accout_password">密码</string>
+    <string name="accout_source">源节点</string>
+    <string name="accout_NetType">网络类型</string>
+    <string name="toast_connection_mistake">网络异常</string>
+    <string name="toast_connection_success">连接成功</string>
+    <string name="toast_connection_fail">连接失败</string>
+    <string name="toast_fail_reconnection">连接失败，自动重连</string>
+    <string name="toast_userpassword_fail">用户名密码错误</string>
+    <string name="toast_no_response">服务器无响应</string>
+    <string name="toast_no_response_reconnection">服务器无响应，自动重连</string>
+    <string name="toast_auth_401">用户被占用</string>
+    <string name="toast_no_network">网络不可用</string>
+    <string name="toast_input_error">输入格式有误</string>
+    <string name="progress_wait">正在获取源节点...</string>
+    <string name="receivingdate">已启动网络...</string>
+    <string name="connectingServer">正在连接服务器...</string>
+    <string name="option">提示</string>
+    <string name="disconnect">未连接服务器</string>
+    <string name="inputSourcenode">请输入源节点</string>
+    <string name="selectSourcenode">请选择源节点</string>
+
+    <!-- 北斗星通 -->
+    <string name="bdxtdiff">北斗星通差分设置</string>
+    <string name="sim_number">SIM卡号</string>
+    <string name="diff_format">差分格式</string>
+    <string name="bdxt_serial_port">串口号</string>
+    <string name="bdxt_serial_baudrate">波特率</string>
+    <string name="setsuccess">设置生效，后台服务成功启动！</string>
+    <!-- Toast -->
+    <string name="toast_ip_null">ip地址不能为空!</string>
+    <string name="toast_port_null">端口不能为空!</string>
+    <string name="toast_user_null">用户名不能为空!</string>
+    <string name="toast_password_null">密码不能为空!</string>
+    <string name="toast_node_null">源节点不能为空!</string>
+    <string name="toast_machine_null">仪器号不能为空!</string>
+    <string name="toast_work_group_null">工作组不能为空!</string>
+    <string name="toast_sim_null">本地sim卡号不能为空!</string>
+    <string name="toast_serial_port_null">串口号不能为空!</string>
+    <string name="toast_net_param">请先配置网络参数!</string>
+    <!-- 源节点信息 -->
+    <string name="source_node">源节点</string>
+    <string name="source_node_name">源节点名称：</string>
+    <string name="source_node_detail">源节点详细信息：</string>
+    <string name="source_node_identifier">标识：</string>
+    <string name="source_node_fomat">电文格式：</string>
+    <string name="source_node_carrier">载波相位：</string>
+    <string name="source_node_gnss">GNSS:</string>
+    <string name="source_node_network">网络：</string>
+    <string name="source_node_country">国家：</string>
+    <string name="source_node_location">位置：</string>
+    <string name="source_node_nmea">发送位置：</string>
+    <string name="source_node_solution">模型：</string>
+    <string name="source_node_generator">发生者：</string>
+    <string name="source_node_authenticaiton">认证：</string>
+    <string name="source_node_fee">收费：</string>
+    <string name="source_node_rate">波特率：</string>
+    <string name="source_node_no">不存在源节点选项！</string>
+    <string name="source_node_no_check">请选择源节点！</string>
+    <string name="net_cors_set">网络差分设置</string>
+    <string name="cors_net_config">设置连接</string>
+    <string name="cors_node_info">节点信息</string>
+
+</resources>

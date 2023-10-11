@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+
+    <TextView
+        android:id="@+id/t1"
+        style="@style/text_Big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/csgx" />
+
+    <TextView
+        android:id="@+id/cpxht"
+        style="@style/text_verySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="50dp"
+        android:text="@string/cpxh" />
+
+    <TextView
+        android:id="@+id/cpxh"
+        style="@style/text_verySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/cpxht"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="50dp"
+        android:text="X T-800" />
+
+
+
+    <TextView
+        android:id="@+id/cpmct"
+        style="@style/text_verySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/cpxh"
+        android:layout_marginTop="10dp"
+        android:text="@string/cpmc" />
+
+    <TextView
+        android:id="@+id/gsmct"
+        style="@style/text_verySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/cpmct"
+        android:layout_below="@+id/cpxh"
+        android:layout_marginTop="10dp"
+        android:text="@string/cpmcxt" />
+
+
+    <TextView
+        android:id="@+id/gcmc"
+        style="@style/text_verySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/cpmct"
+        android:layout_marginTop="10dp"
+        android:text="@string/gsmc" />
+
+    <TextView
+        android:id="@+id/cpmc"
+        style="@style/text_verySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/gcmc"
+        android:layout_below="@+id/cpmct"
+        android:layout_marginTop="10dp"
+        android:text="@string/gsmcxt" />
+
+
+
+    <TextView
+        android:id="@+id/appversiont"
+        style="@style/text_verySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_below="@+id/cpmc"
+        android:layout_marginTop="10dp"
+        android:text="@string/appversiont" />
+
+    <TextView
+        android:id="@+id/appversion"
+        style="@style/text_verySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/appversiont"
+        android:layout_below="@+id/cpmc"
+        android:layout_marginTop="10dp"
+        android:text="@string/Version" />
+    <Button
+        android:id="@+id/appupdate"
+        style="@style/gnss_setting_button_b"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/appversion"
+        android:layout_marginTop="80dp"
+        android:focusable="false"
+        android:text="@string/appupdate" />
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/bottomBar"
+            layout="@layout/bottom_bar_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvsetting"
+            style="@style/title_word"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/downloadrl"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circular_background"
+            android:layout_centerInParent="true"
+            android:layout_margin="50dp"
+            android:padding="20dp"
+          >
+
+
+            <ProgressBar
+                android:layout_margin="10dp"
+
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progress="0"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/progressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="0%"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_centerInParent="true" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/updateper"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+            <Button
+                android:id="@+id/progresscancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/progressBar"
+                android:layout_marginTop="50dp"
+                android:background="@color/red"
+                android:text="@string/cancleupdate"
+                android:textSize="26sp"
+                android:textColor="@android:color/white" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

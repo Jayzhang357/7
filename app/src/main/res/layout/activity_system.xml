@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+
+    <RelativeLayout
+        android:id="@+id/btncsszrl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/back_g1"
+        android:gravity="center">
+
+        <com.zhd.commoncontrol.MainBigImageControl
+
+            android:id="@+id/btncssz"
+
+            style="@style/imaginview_btn_bottom"></com.zhd.commoncontrol.MainBigImageControl>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btnsbsmsrl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/btncsszrl"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/back_g1"
+        android:gravity="center">
+
+        <com.zhd.commoncontrol.MainBigImageControl
+
+            android:id="@+id/btnsbsms"
+
+            style="@style/imaginview_btn_bottom"></com.zhd.commoncontrol.MainBigImageControl>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btncffsrl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/btnsbsmsrl"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/back_g1"
+        android:gravity="center">
+
+        <com.zhd.commoncontrol.MainBigImageControl
+
+            android:id="@+id/btncffs"
+
+            style="@style/imaginview_btn_bottom"></com.zhd.commoncontrol.MainBigImageControl>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btnsbzcrl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/btncffsrl"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/back_g1"
+        android:gravity="center">
+
+        <com.zhd.commoncontrol.MainBigImageControl
+
+            android:id="@+id/btnsbzc"
+
+            style="@style/imaginview_btn_bottom"></com.zhd.commoncontrol.MainBigImageControl>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btncsgxrl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/btnsbzcrl"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/back_g1"
+        android:gravity="center">
+
+        <com.zhd.commoncontrol.MainBigImageControl
+
+            android:id="@+id/btncsgx"
+
+            style="@style/imaginview_btn_bottom"></com.zhd.commoncontrol.MainBigImageControl>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/btnccszrl"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/btncsszrl"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/back_g1"
+        android:gravity="center">
+
+        <com.zhd.commoncontrol.MainBigImageControl
+
+            android:id="@+id/btnccsz"
+
+            style="@style/imaginview_btn_bottom"></com.zhd.commoncontrol.MainBigImageControl>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/bottomBar"
+            layout="@layout/bottom_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvsetting"
+            style="@style/title_word"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

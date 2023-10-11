@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ControlType">
+        <item>液压阀</item>
+        <item>MDU</item>
+    </string-array>
+    <string-array name="GpsPositionType">
+        <item>未定位</item>
+        <item>单点</item>
+        <item>伪距解</item>
+        <item>SBAS</item>
+        <item>固定解</item>
+        <item>浮点解</item>
+        <item>未知</item>
+        <item>RTK_FLOAT</item>
+        <item>未知</item>
+        <item>WASS</item>
+    </string-array>
+    <string-array name="RadioModel">
+        <item>单收</item>
+        <item>单发</item>
+        <item>收/发</item>
+    </string-array>
+    <string-array name="RadioPower">
+        <item>低</item>
+        <item>中</item>
+        <item>高</item>
+    </string-array>
+</resources>

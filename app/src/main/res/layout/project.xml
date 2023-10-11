@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="1010dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/newbt"
+        android:layout_below="@+id/ic_back"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+
+            android:id="@+id/linearLayout1"
+            android:layout_width="1024dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/backset"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="58dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="false"
+                android:text="@string/id_tx"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="false"
+                android:text="@string/jobname_tx"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+
+                android:clickable="false"
+                android:text="@string/jylx_tx"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+
+                android:clickable="false"
+                android:text="@string/Cover_t_tx"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+
+                android:clickable="false"
+                android:text="@string/height_set_tx"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+
+                android:clickable="false"
+                android:text="@string/lmd"
+                android:textColor="#000000"
+                android:textSize="7pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <ListView
+                android:id="@+id/projectgd"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:background="#fbe4b8"
+                android:cacheColorHint="#00000000"
+                android:columnWidth="600dp"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:focusable="true"
+                android:scrollingCache="false">
+
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newbt"
+        style="@style/gnss_setting_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="90dp"
+        android:focusable="false"
+        android:text="@string/newbt_tx" />
+
+
+    <Button
+        android:id="@+id/modifybt"
+        style="@style/gnss_setting_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginBottom="90dp"
+        android:layout_toRightOf="@+id/selectrecovery"
+        android:focusable="false"
+        android:text="@string/modifybt_tx" />
+
+    <Button
+        android:id="@+id/deletebt"
+        style="@style/gnss_setting_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginBottom="90dp"
+        android:layout_toRightOf="@+id/newbt"
+        android:focusable="false"
+        android:text="@string/deletebt_tx" />
+
+
+    <Button
+        android:id="@+id/deleteRecord"
+        style="@style/gnss_setting_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginBottom="90dp"
+        android:layout_toRightOf="@+id/deletebt"
+        android:focusable="false"
+        android:text="@string/deleteRecord_tx" />
+
+
+    <Button
+        android:id="@+id/daoru"
+        style="@style/gnss_setting_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginBottom="90dp"
+        android:layout_toRightOf="@+id/deleteRecord"
+        android:focusable="false"
+        android:text="@string/daoru_tx" />
+
+    <Button
+        android:id="@+id/selectdelete"
+        style="@style/gnss_setting_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginBottom="90dp"
+        android:layout_toRightOf="@+id/daoru"
+        android:focusable="false"
+        android:text="@string/selectdelete_tx" />
+
+    <Button
+        android:id="@+id/selectrecovery"
+        style="@style/gnss_setting_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginBottom="90dp"
+        android:layout_toRightOf="@+id/selectdelete"
+        android:focusable="false"
+        android:text="@string/selectrecovery_tx" />
+
+    <Button
+        android:id="@+id/ic_back"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_back" />
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="500dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:hint="请输入想要搜索的作业名称"
+        android:background="@color/textback"
+        android:maxLength="10"
+        android:textSize="25dp"
+        android:singleLine="true"
+
+      />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="90dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/delete"
+        android:visibility="gone"
+       />
+
+    <ImageView
+        android:id="@+id/isearch"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/isearch" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/selectbt"
+        style="@style/gnss_setting_button"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25dp"
+
+        android:layout_marginBottom="90dp"
+        android:layout_toRightOf="@+id/modifybt"
+        android:focusable="false"
+        android:text="@string/selectbt_tx" />
+    <RelativeLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/bottomBar"
+            layout="@layout/bottom_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvsetting"
+            style="@style/title_word"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="" />
+    </RelativeLayout>
+
+</RelativeLayout>

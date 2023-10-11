@@ -1,0 +1,13 @@
+rootProject.name = "SHJ"
+include ':app'
+include ':CommonUtilty'
+include ':GpsModels'
+include ':MotherBoardManage'
+include ':SerialPortManage'
+include ':GnssManager'
+include ':DataManageTemplate'
+include ':GpsInterfaces'
+include ':TCPSocketClientBase'
+include ':AgricultureClient'
+include ':ZHDCorsNet'
+include ':CorsNet'

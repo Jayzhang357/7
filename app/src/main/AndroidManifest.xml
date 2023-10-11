@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zhd.shj">
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="com.zhd.AppHelper"
+        android:allowBackup="true"
+        android:icon="@drawable/cloud_g"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/cloud_g"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:theme">
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.myapp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.JobManageActivity"
+            android:configChanges="locale" />
+
+        <activity
+            android:name=".activity.SystemSet"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activity.Project"
+            android:exported="false"></activity>
+
+        <activity
+            android:name=".activity.Difference"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activity.Update"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activity.Recover"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activity.CanShuSet"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activity.NtripSetting"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.CanActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".activity.FirstOpen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".update.DownUpdateInfoService"
+            android:enabled="true" />
+        <service android:name="com.zhd.killSelfService" />
+        <service
+            android:name=".CorsGprsService"
+            android:enabled="true"
+            android:foregroundServiceType="mediaProjection" />
+        <service
+            android:name=".CorsGprsService"
+            android:enabled="true"
+            android:foregroundServiceType="mediaProjection" />
+        <service
+            android:name=".qx.QxService"
+            android:enabled="true"
+            android:foregroundServiceType="mediaProjection" />
+    </application>
+
+</manifest>

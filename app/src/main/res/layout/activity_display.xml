@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+   >
+-
+
+    <RelativeLayout
+        android:id="@+id/rlup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:gravity="center"
+            android:focusable="false"
+            android:lines="1"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/TextView01"
+            android:clickable="false"
+            android:gravity="center"
+            android:focusable="false"
+            android:lines="1"
+            android:text="2"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/TextView02"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:lines="1"
+            android:text="3"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/TextView03"
+            android:clickable="false"
+            android:gravity="center"
+            android:focusable="false"
+            android:lines="1"
+            android:text="4"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/TextView04"
+            android:clickable="false"
+            android:focusable="false"
+            android:lines="1"
+            android:text="5"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/TextView05"
+            android:clickable="false"
+            android:gravity="center"
+            android:focusable="false"
+            android:lines="1"
+            android:text="6"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

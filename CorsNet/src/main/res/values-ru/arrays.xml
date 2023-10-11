@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="NetType">
+        <item >VRS</item>
+        <item >EFT</item>
+        <item >xFix</item>
+    </string-array>
+    
+    <string-array name="NetType1">
+        <item >VRS</item>
+        <item >EFT</item>
+    </string-array>
+    
+    <string-array name="source_node_carrier">
+        <item >DGPS</item>
+        <item >L1</item>
+        <item >L1+L2</item>
+    </string-array>
+    
+    <string-array name="source_node_sent">
+        <item >Да</item>
+        <item >Нет</item>
+    </string-array>
+    
+    <string-array name="source_node_solution">
+        <item >Single Base</item>
+        <item >VRS</item>
+    </string-array>
+    
+    <string-array name="source_node_authentication">
+        <item >Нет</item>
+        <item >Основной</item>
+        <item >Суммарный</item>
+    </string-array>
+    
+    <string-array name="source_node_fee">
+        <item >Да</item>
+        <item >Нет</item>
+    </string-array>
+</resources>

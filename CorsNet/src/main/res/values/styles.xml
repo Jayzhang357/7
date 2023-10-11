@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 全屏幕拉伸 -->
+    <style name="fill">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!-- 固定自身大小 -->
+    <style name="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 横向分布 -->
+    <style name="fill.horizontal">
+        <item name="android:layout_width">0px</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="fill.horizontal.right">
+        <item name="android:layout_width">0px</item>
+        <item name="android:background">@drawable/ic_edittext</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+    <!-- 纵向分布 -->
+    <style name="fill.vertical">
+        <item name="android:layout_height">0px</item>
+    </style>
+
+    <style name="fill.vertical.column">
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginRight">1dp</item>
+    </style>
+
+    <style name="fill.vertical.column.text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="fill.vertical.column.text.head">
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="pop" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+
+    <style name="bottom_bar_button">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="title_word">
+        <item name="android:textColor">@drawable/white</item>
+        <item name="android:textSize">15pt</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="edittext_normal">
+        <item name="android:background">@drawable/ic_edittext</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

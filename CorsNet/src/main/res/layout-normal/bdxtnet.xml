@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_weight="1.0"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/bo_box"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/fill.horizontal"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/accout_host"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_size_big" />
+
+        <EditText
+            android:id="@+id/bdxt_edit_host"
+            style="@style/fill.horizontal"
+            android:layout_weight="5"
+            android:textSize="@dimen/text_size_small"
+            android:ems="10" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.0"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/bo_box"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/fill.horizontal"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/accout_port"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_size_big" />
+
+        <EditText
+            android:id="@+id/bdxt_edit_port"
+            style="@style/fill.horizontal"
+            android:layout_weight="5"
+            android:textSize="@dimen/text_size_small"
+            android:ems="10" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.0"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/bo_box"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/fill.horizontal"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/sim_number"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_size_big" />
+
+        <EditText
+            android:id="@+id/bdxt_sim_number"
+            style="@style/fill.horizontal"
+            android:layout_weight="5"
+            android:textSize="@dimen/text_size_small"
+            android:ems="11" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.0"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/bo_box"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/fill.horizontal"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/bdxt_serial_baudrate"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_size_big" />
+
+        <EditText
+            android:id="@+id/etbdxt_serial_baudrate"
+            style="@style/fill.horizontal"
+            android:layout_weight="5"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_small"
+            android:ems="10" >
+        </EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_weight="1.0"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:background="@drawable/bo_box"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/fill.horizontal"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/diff_format"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/text_size_big" />
+
+        <EditText
+            android:id="@+id/bdxt_diff_format"
+            style="@style/fill.horizontal"
+            android:layout_weight="5"
+            android:textSize="@dimen/text_size_small"
+            android:ems="10" >
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="violet">#A500CC</drawable>
+    <drawable name="white">#FFFFFF</drawable>
+    <drawable name="lightgray">#DDDDDD</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="selected">#FFBB00</drawable>
+    <drawable name="blue">#70B9ED</drawable>
+    <drawable name="gray">#444444</drawable>
+    <drawable name="whitesmoke">#F5F5F5</drawable>
+    <drawable name="gainsboro">#DCDCDC</drawable>
+    <drawable name="darkblue">#0000AA</drawable>
+    <drawable name="lightblue">#99BBFF</drawable>
+    <drawable name="greenblue">#CCCCFF</drawable>
+    <drawable name="darkgreen">#227700</drawable>
+    <drawable name="btn_pressed">#7A7A7A</drawable>
+    <drawable name="btn_normal">#AAAAAA</drawable>
+
+</resources>

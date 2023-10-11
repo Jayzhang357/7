@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 单击时的背景图片 -->
+    <item android:drawable="@drawable/biz_ad_new_version1_start_pressed" android:state_pressed="true"/>
+    <!-- 获得焦点的图片背景 -->
+    <item android:drawable="@drawable/biz_ad_new_version1_start_pressed" android:state_focused="true"/>
+    <!-- 可共使用的图片背景 -->
+    <item android:drawable="@drawable/biz_news_pread_list_item_control_bg" android:state_enabled="true"/>
+    <!-- 一般状态下图片背景 -->
+    <item android:drawable="@drawable/biz_news_pread_list_item_control_bg"></item>
+
+</selector>

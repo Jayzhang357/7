@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_versionName">V1.0.6</string>
+    <string name="app_version">Version</string>
+    <string name="source_point">Get</string>
+    <!-- network.xml -->
+    <string name="net_connetion">Network</string>
+    <string name="gprs_close_sucess">close 3G Sucess</string>
+    <string name="net_none_connetion">Disconnected</string>
+    <string name="src_node_error">Get source node failed! \nIf confirm to use Hi-Target VRS please enter the source node. \nIf not please check the IP and the Port!</string>
+    <string name="machine_number">SN Number</string>
+    <string name="user_group">User Group</string>
+    <string name="work_group">Work Group</string>
+    <string name="net_setting">Network Settings</string>
+    <string name="main_lat">LAT.</string>
+    <string name="main_lon">LON.</string>
+    <string name="main_al">Elv.</string>
+    <string name="main_hdop">HDOP</string>
+    <string name="main_type">Solution</string>
+    <string name="main_sate">SV</string>
+    <string name="main_age">Latency</string>
+    <string name="main_base">Base ID</string>
+    <string name="main_null">NULL</string>
+    <string name="main_btn_accout">Config.</string>
+    <string name="main_btn_start">Connect</string>
+    <string name="main_btn_close">Disconnect</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_submit">Confirm</string>
+    <string name="accout_host">IP</string>
+    <string name="accout_port">Port</string>
+    <string name="accout_username">Username</string>
+    <string name="accout_password">Password</string>
+    <string name="accout_source">Source Node</string>
+    <string name="accout_NetType">Network Type</string>
+    <string name="toast_connection_mistake">Network Abnormal</string>
+    <string name="toast_connection_success">Connection Success</string>
+    <string name="toast_connection_fail">Connection Failed</string>
+    <string name="toast_fail_reconnection">Connection failed, auto re-connecting...</string>
+    <string name="toast_userpassword_fail">Wrong username or password.</string>
+    <string name="toast_no_response">Server no response.</string>
+    <string name="toast_no_response_reconnection">Server no response, auto re-connecting...</string>
+    <string name="toast_auth_401">Username Occupied</string>
+    <string name="toast_no_network">Network Unavailable</string>
+    <string name="toast_input_error">Input Error</string>
+    <string name="progress_wait">Getting Source Node...</string>
+    <string name="receivingdate">Enabling Network...</string>
+    <string name="connectingServer">Connecting Server...</string>
+    <string name="option">Option</string>
+    <string name="disconnect">Server Disconnected</string>
+    <string name="inputSourcenode">Input Source Node</string>
+    <string name="selectSourcenode">Select Source Node</string>
+
+    <!-- 北斗星通 -->
+    <string name="bdxtdiff">BDStar Diff.</string>
+    <string name="sim_number">SIM Number</string>
+    <string name="diff_format">Diff. Format</string>
+    <string name="bdxt_serial_port">Serial Port</string>
+    <string name="bdxt_serial_baudrate">Baudrate</string>
+    <string name="setsuccess">Setting Success!</string>
+    <!-- Toast -->
+    <string name="toast_ip_null">IP cannot be empty!</string>
+    <string name="toast_port_null">Port cannot be empty!</string>
+    <string name="toast_user_null">Username cannot be empty!</string>
+    <string name="toast_password_null">Password cannot be empty!</string>
+    <string name="toast_node_null">Source node cannot be empty!</string>
+    <string name="toast_machine_null">SN number cannot be empty!</string>
+    <string name="toast_work_group_null">Work group cannot be empty!</string>
+    <string name="toast_sim_null">SIM number cannot be empty!</string>
+    <string name="toast_serial_port_null">Serial port cannot be empty!</string>
+    <string name="toast_net_param">Please configure the network at first!</string>
+    <!-- 源节点信息 -->
+    <string name="source_node">Source Node</string>
+    <string name="source_node_name">Source Node Name:</string>
+    <string name="source_node_detail">Source Node Detail:</string>
+    <string name="source_node_identifier">ID:</string>
+    <string name="source_node_fomat">Format:</string>
+    <string name="source_node_carrier">Carrier:</string>
+    <string name="source_node_gnss">GNSS:</string>
+    <string name="source_node_network">Network:</string>
+    <string name="source_node_country">Country:</string>
+    <string name="source_node_location">Location:</string>
+    <string name="source_node_nmea">NMEA:</string>
+    <string name="source_node_solution">Solution:</string>
+    <string name="source_node_generator">Generator:</string>
+    <string name="source_node_authenticaiton">Auth.:</string>
+    <string name="source_node_fee">Fee:</string>
+    <string name="source_node_rate">Baudrate:</string>
+    <string name="source_node_no">No source node available!</string>
+    <string name="source_node_no_check">Please select source node!</string>
+    <string name="net_cors_set">Correction Config.</string>
+    <string name="cors_net_config">Connection Config.</string>
+    <string name="cors_node_info">Source Node Info.</string>
+
+</resources>

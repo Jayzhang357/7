@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="horizontal" >
+
+    <!-- ListView卫星详细数据上方 标题栏的布局文件 -->
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/ListViewTitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/stellar_sateprn" />
+
+    <TextView
+        android:id="@+id/textView02"
+        style="@style/ListViewTitleTextStyle"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"       
+        android:layout_weight="1"
+        android:text="@string/stellar_sateele" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/ListViewTitleTextStyle"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"       
+        android:layout_weight="1"
+        android:text="@string/stellar_sateazi" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/ListViewTitleTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="L1" />
+    
+    <TextView
+        android:id="@+id/textView5"
+        style="@style/ListViewTitleTextStyle"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="L2" />
+
+</LinearLayout>

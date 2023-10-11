@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AgricultureClient" />
+            <option value="$PROJECT_DIR$/CommonUtilty" />
+            <option value="$PROJECT_DIR$/CorsNet" />
+            <option value="$PROJECT_DIR$/DataManageTemplate" />
+            <option value="$PROJECT_DIR$/GnssManager" />
+            <option value="$PROJECT_DIR$/GpsInterfaces" />
+            <option value="$PROJECT_DIR$/GpsModels" />
+            <option value="$PROJECT_DIR$/MotherBoardManage" />
+            <option value="$PROJECT_DIR$/SerialPortManage" />
+            <option value="$PROJECT_DIR$/TCPSocketClientBase" />
+            <option value="$PROJECT_DIR$/ZHDCorsNet" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

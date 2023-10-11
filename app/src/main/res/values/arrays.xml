@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="GpsPositionType">
+        <item>未定位</item>
+        <item>单点</item>
+        <item>伪距解</item>
+        <item>SBAS</item>
+        <item>固定解</item>
+        <item>浮点解</item>
+        <item>未知</item>
+        <item>RTK_FLOAT</item>
+        <item>未知</item>
+        <item>WASS</item>
+    </string-array>
+
+    <string-array name="Job_Type">
+        <item>平地模式</item>
+        <item>斜面模式</item>
+
+    </string-array>
+
+    <string-array name="btl">
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>230400</item>
+        <item>460800</item>
+
+    </string-array>
+
+    <string-array name="channels">
+
+        <item>通道1</item>
+        <item>通道2</item>
+
+
+    </string-array>
+
+    <string-array name="bauds">
+        <item>50K</item>
+        <item>100K</item>
+        <item>125K</item>
+        <item>250K</item>
+        <item>500K</item>
+        <item>1M</item>
+    </string-array>
+
+    <string-array name="types">
+        <item>标准</item>
+        <item>扩展</item>
+
+    </string-array>
+
+    <string-array name="frameTypes">
+        <item>数据帧</item>
+        <item>远程帧</item>
+
+    </string-array>
+</resources>

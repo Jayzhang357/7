@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ControlType">
+        <item>گىدراۋلىك كلاپان</item> 
+        <item>MDU</item>
+    </string-array>
+    <string-array name="GpsPositionType">
+        <item>ئورۇن بېكىتمەسلىك</item>
+        <item>يەككە نۇقتا </item>
+        <item>ساقتا ئارلىق يېشىمى</item>
+        <item>SBAS</item>
+        <item>مۇقۇم يېشىم</item>
+        <item>لەيلىمە يېشىم</item>
+        <item>نامەلۇم</item>
+        <item>RTK_FLOAT</item>
+        <item>نامەلۇم</item>
+        <item>WASS</item>
+    </string-array>
+    <string-array name="RadioModel">
+        <item>يەككە يېغىش</item>
+        <item>يەككە تارقىتىش</item>
+        <item>تارقىتىش\يىغىش</item>
+    </string-array>
+    <string-array name="RadioPower">
+        <item>تۆۋەن</item>
+        <item>ئوتتۇرھال</item>
+        <item>يۇقىرى</item>
+    </string-array>
+</resources>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="DataLink">
+        <item>Radio</item>
+        <item>Network</item>
+        <item>Compatible Mode</item>
+    </string-array>
+    <string-array name="Unit">
+        <item>㎡</item>
+        <item>亩</item>
+        <item>公顷</item>
+    </string-array>
+    <string-array name="Alarm">
+        <item>10s</item>
+        <item>30s</item>
+        <item>1min</item>
+        <item>10min</item>
+        <item>30min</item>
+        <item>从不提醒</item>
+    </string-array>
+    <string-array name="Language">
+        <item>中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="ControlType">
+        <item>Hydraulic</item>
+        <item>MDU</item>
+    </string-array>
+    <string-array name="GpsPositionType">
+        <item>None</item>
+        <item>Single</item>
+        <item>RTD</item>
+        <item>SBAS</item>
+        <item>RTK_FIXED</item>
+        <item>RTK_FLOAT</item>
+        <item>UnKnown</item>
+        <item>Fix_POS</item>
+        <item>UnKnown</item>
+        <item>WASS</item>
+    </string-array>
+    <string-array name="JobType">
+        <item>AB Line</item>
+    </string-array>
+    <string-array name="RejectReason">
+        <item>SAM DISENGAGE</item>
+        <item> USER TURNING WHEEL    </item>
+        <item> MT ROADING SWITCH     </item>
+        <item> MT RESET RQUIRED      </item>
+        <item> NO VALID PATH         </item>
+        <item> ABOVE MAX ENGAGE SPEED </item>
+        <item> BELOW MIN ENGAGE SPEED </item>
+        <item> BAD GPS              </item>
+        <item> VCMRG NOT READY     </item>
+        <item> MEAS NOT OK        </item>
+        <item> STEER ERROR          </item>
+        <item> TIME NOT SYNCED      </item>
+        <item>STEERMEAS NOT OK      </item>
+        <item> JOB NOT OK             </item>
+        <item>ROW ERROR             </item>
+        <item>NO DEFINING ROW DATA  </item>
+        <item>TOO FAR FROM ROW       </item>
+        <item>POINT ERROR            </item>
+        <item>POINT SPACING BAD    </item>
+        <item>CURVATURE BAD         </item>
+        <item>CONTROLLER NOT OK     </item>
+        <item>CONT NOT READY       </item>
+        <item>WLDPT YC LIM EXCD    </item>
+        <item>WLDPT HE LIM EXCD    </item>
+        <item>MAX ACC EXCEEDED   </item>
+        <item>WLDPT K LIM EXCD    </item>
+        <item>CALIBRATION NOT OK  </item>
+        <item>CAL NOT READY         </item>
+        <item>INVALID TOKEN         </item>
+        <item>CLOSEST ROW NOT FOUND </item>
+        <item>FROZENROW NOT FOUND    </item>
+        <item>CURRENT SEG NOT FOUND  </item>
+        <item>DELTA HEADING BAD     </item>
+        <item>OT2 RESETED          </item>
+        <item>OT2 OVERLOADED         </item>
+        <item>OT2 PARAM SYNC       </item>
+        <item>OT2 ECU HARNESS      </item>
+        <item>OT2 MDU POWER        </item>
+        <item>OT2 MDU HARNESS     </item>
+        <item>OT2 MDU KICKOUT       </item>
+        <item>OT2 TILT RESET       </item>
+        <item> OT2 TILT ZERO         </item>
+        <item> OT2 FIRMWARE UPDATE   </item>
+        <item> OT2 MDU KICKOUT ADV    </item>
+        <item>  OT2 KICKOUT TIMEOUT    </item>
+        <item>  OT2 KICKOUT OTHER     </item>
+        <item> OT2 COMM ERROR         </item>
+        <item>  OT2 INVLD FIRMWARE    </item>
+        <item> MTVEH COMM ERROR      </item>
+        <item> MTVEH STR NOT READY    </item>
+        <item> MTVEH RESET REQUIRED  </item>
+        <item> MTVEH CLUTCH PRESSED    </item>
+        <item> MTVEH ROADING SWITCH  </item>
+        <item> MTVEH TURN WHEEL REQ   </item>
+        <item> DISP ENGAGE NOT SUPPORTED  </item>
+        <item> JD TRACTOR IN PARK    </item>
+        <item>  JD TRACTOR STEER FAULT  </item>
+        <item>  JD ALT GUID SYS ACTIVE  </item>
+        <item>  JD AUTO CMD TIMEOUT    </item>
+        <item>  JD AUTHORIZATION DENIED </item>
+        <item>  JD OIL TEMP TOO LOW   </item>
+        <item> JD IN DIAGNOSTIC MODE  </item>
+        <item> JD CONTRL INCOMPATIBLE </item>
+        <item> JD NO RESUME SWITCH     </item>
+        <item>  JD CURVE NOT MATCHED    </item>
+        <item>  JD SECURITY ERROR   </item>
+        <item>  JD AUTHORIZATION PENDING  </item>
+        <item> JD IMPL RELEASED CNTRL  </item>
+        <item> JD GLOBAL STOP RECEIVED </item>
+        <item> JD OPERATOR PRESENCE   </item>
+        <item>  JD ACCESS MGR BLOCKED </item>
+        <item>  JD SECURITY ERROR 1  </item>
+        <item>   JD SECURITY ERROR 2    </item>
+        <item>   JD SECURITY ERROR 3   </item>
+        <item>   JD SECURITY ERROR 4   </item>
+        <item>   JD SECURITY ERROR 5    </item>
+        <item>   JD SECURITY ERROR 6   </item>
+        <item>   JD UNKNOWN ERROR      </item>
+        <item>   INVALID JDSTEER FC   </item>
+        <item>   GS HEADING NOT READY   </item>
+        <item>  GS ORIENTATION NOT GOOD </item>
+        <item>  ES HYDRAULIC FC EXPIRED </item>
+        <item>   ES SBW CAN FC EXPIRED  </item>
+        <item>   FCMGR NOT READY         </item>
+        <item>   ES RTK FC EXPIRED   </item>
+        <item>   ES NEED FC FOR STEER EXPIRED  </item>
+    </string-array>
+    <string-array name="InterruptReason">
+        <item>User Display Disengage</item>
+        <item>User Steering Wheeel Disengage</item>
+        <item>GPS Postition Dropout</item>
+        <item>GPS Atitude Dropout</item>
+        <item>Mode Switched While Steering</item>
+        <item>No Move Timeout</item>
+        <item>SA Module Error</item>
+        <item>Above Maximum Speed</item>
+        <item>Controller Not Initialized</item>
+        <item>Wild Point Position Exceeded</item>
+        <item>Wild Point Heading Exceeded</item>
+        <item>Exceeded Maximum Lati Acc Error</item>
+        <item>Wild Point Curvature Exceeded</item>
+        <item>VcMgr Not Ready</item>
+        <item>Measurement Error</item>
+        <item>Steer Error</item>
+        <item>Time Not Synced</item>
+        <item>Steer Measurement Error</item>
+        <item>Job Error</item>
+        <item>Row Error</item>
+        <item>No Defining Row Data</item>
+        <item>Too Far From Row</item>
+        <item>Point Error</item>
+        <item>Point Spaceing Error</item>
+        <item>Curvature Error</item>
+        <item>Contorller Error</item>
+        <item>Controller Not Ready</item>
+        <item>Calibration Not Complete</item>
+        <item>SAM Disengage Switch On</item>
+        <item>Invalid Token</item>
+        <item>Closest Row Not Found</item>
+        <item>Frozen Row Not Found</item>
+        <item>Delta Heading Bad</item>
+        <item>OnTrac2 Reset</item>
+        <item>OnTrac2 Overloaded</item>
+        <item>OnTrac2 Parameters Not Synced</item>
+        <item>Ontrac2 MDU Harnedd not connected to ECU</item>
+        <item>MDU Kickout</item>
+        <item>Tilt Reset</item>
+        <item>Tilt Zero</item>
+        <item>Firmware Update</item>
+        <item>MDU Disengagement Advanced</item>
+        <item>CAN packets</item>
+        <item>Disengement for Other reason</item>
+        <item>Lost communication</item>
+        <item>Invalid Firmware</item>
+        <item>MT Track</item>
+        <item>MT Track</item>
+        <item>MT Track</item>
+        <item>MT Track</item>
+        <item>MT Track</item>
+        <item>JD Steer Tractor in Park</item>
+        <item>JD Steer Tractor in Park</item>
+    </string-array>
+
+</resources>

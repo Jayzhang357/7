@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/transparent" >
+
+    <TextView
+        android:id="@+id/tvIsChoosen"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text=" "
+        android:textSize="@dimen/value_size" />
+    <TextView
+        android:id="@+id/tvItem"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="@dimen/value_size" />
+
+    <RadioButton
+        android:id="@+id/rBtnChoose"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:visibility="invisible" />
+
+</LinearLayout>

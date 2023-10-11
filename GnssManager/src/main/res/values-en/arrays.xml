@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ControlType">
+        <item>Hydraulic Valve</item>
+        <item>MDU</item>
+    </string-array>
+    <string-array name="GpsPositionType">
+        <item>None</item>
+        <item>Single</item>
+        <item>DGPS</item>
+        <item>SBAS</item>
+        <item>Fix</item>
+        <item>Float</item>
+        <item>Unknown</item>
+        <item>Float</item>
+        <item>Unknown</item>
+        <item>WASS</item>
+    </string-array>
+    <string-array name="RadioModel">
+        <item>Rx</item>
+        <item>Tx</item>
+        <item>Rx/Tx</item>
+    </string-array>
+    <string-array name="RadioPower">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+</resources>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/back"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <include
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/bottom_close" />
+
+        <TextView
+            android:id="@+id/tvsetting"
+            style="@style/title_word"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/diffset_network_setting" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rll02"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp" >
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/purple_700" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textColor="@drawable/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDiffStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/rll02"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center" >
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    style="@style/APNTextView"
+                    android:text="@string/net_ip" />
+
+                <EditText
+                    android:id="@+id/EtIP"
+                    style="@style/APNEditText"
+                    android:inputType="phone"
+                    android:maxLength="20" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/View02"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/gray" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    style="@style/APNTextView"
+                    android:text="@string/net_port" />
+
+                <EditText
+                    android:id="@+id/EtPort"
+                    style="@style/APNEditText"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:textSize="@dimen/value_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/View03"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    style="@style/APNTextView"
+                    android:text="@string/accout_username" />
+
+                <EditText
+                    android:id="@+id/EtUsername"
+                    style="@style/APNEditText"
+                    android:maxLength="20"
+                    android:textSize="@dimen/value_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    style="@style/APNTextView"
+                    android:text="@string/accout_password" />
+
+                <EditText
+                    android:id="@+id/EtPassword"
+                    style="@style/APNEditText"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textSize="@dimen/value_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+
+                    style="@style/APNTextView"
+                    android:text="@string/accout_source" />
+
+                <EditText
+
+                    android:id="@+id/EtPort1"
+                    style="@style/APNEditText"
+
+                    android:maxLength="20"
+                    android:textSize="@dimen/value_size" />
+
+                <Spinner
+
+                    android:id="@+id/spinner1"
+                    style="@style/APNEditText"
+                    android:textAlignment="center"
+                       android:textSize="@dimen/value_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnConect"
+                style="@style/gnss_setting_button"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/connect"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnSelfchecking"
+                style="@style/gnss_setting_button"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/self_checking"
+                android:visibility="invisible"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnbreakOff"
+                style="@style/gnss_setting_button"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="70dp"
+                android:text="@string/break_off"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnGet"
+                style="@style/gnss_setting_button"
+                android:layout_width="120dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="70dp"
+                android:text="@string/source_point"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rll03"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/rlDiffStatus"
+        android:layout_gravity="center" >
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/purple_700" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rll04"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/rll03"
+        android:layout_gravity="center" >
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:fadeScrollbars="false" >
+
+            <TextView
+                android:id="@+id/TextViewReception"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Reception"
+                android:isScrollContainer="true"
+                android:scrollbarStyle="insideOverlay" />
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

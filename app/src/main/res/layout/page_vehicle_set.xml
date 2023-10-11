@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+
+    android:clickable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="false"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <TableLayout style="@style/page_vehicle_table">
+
+
+
+            <TableRow android:paddingLeft="2dp">
+
+                <TextView
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="@string/WD" />
+
+                <TextView
+                    android:id="@+id/txta_w"
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtb_w"
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtc_w"
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="" />
+
+
+
+            </TableRow>
+
+
+            <TableRow android:paddingLeft="2dp">
+
+
+                <TextView
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="@string/JD" />
+
+                <TextView
+                    android:id="@+id/txta_j"
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/txtb_j"
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/txtc_j"
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="" />
+
+            </TableRow>
+
+
+            <TableRow android:paddingLeft="2dp">
+
+
+                <TextView
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="@string/GC" />
+
+                <TextView
+                    android:id="@+id/txta_g"
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/txtb_g"
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="" />
+                <TextView
+                    android:id="@+id/txtc_g"
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="" />
+
+
+            </TableRow>
+            <TableRow android:paddingLeft="2dp">
+
+                <TextView
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:text="" />
+                <Button
+                    android:id="@+id/btnxtsza"
+                    android:background="@drawable/back_g2"
+
+
+                    style="@style/gnss_setting_button_s"
+                    android:text="@string/sza"
+                    ></Button>
+                <Button
+                    android:id="@+id/btnxtszb"
+                    android:background="@drawable/back_g2"
+
+
+                    style="@style/gnss_setting_button_s"
+                    android:text="@string/szb"
+                    ></Button>
+                <Button
+                    android:id="@+id/btnxtszc"
+                    android:background="@drawable/back_g2"
+
+
+                    style="@style/gnss_setting_button_s"
+                    android:text="@string/szc"
+                    ></Button>
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+		Copyright (C) 2007 The Android Open Source Project Licensed under the
+		Apache License, Version 2.0 (the "License"); you may not use this file
+		except in compliance with the License. You may obtain a copy of the
+		License at http://www.apache.org/licenses/LICENSE-2.0 Unless required
+		by applicable law or agreed to in writing, software distributed under
+		the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for
+		the specific language governing permissions and limitations under the
+		License.
+-->
+
+<resources>
+
+
+
+    <attr name="bookimage" format="reference|color" />
+    <attr name="colorValue" format="color" />
+    <attr name="floatValue" format="float" />
+    <attr name="integerValue" format="integer" />
+    <attr name="booleanValue" format="boolean" />
+    <attr name="dimensionValue" format="dimension" />
+    <attr name="stringValue" format="string" />
+    <attr name="referenceValue" format="color|reference" />
+    <attr name="imageValue" format="reference" />
+    <attr name="main_text_color" format="reference|color" />
+    <attr name="page_bottom" format="reference|color" />
+    <attr name="page_background" format="reference|color" />
+    <attr name="page_main" format="reference|color" />
+    <attr name="page_main_buttom" format="reference" />
+    <attr name="page_main_table_head" format="reference|color" />
+    <attr name="page_main_buttom_press" format="reference" />
+    <attr name="page_grid_background" format="reference|color" />
+    <attr name="main_nav_bar_light_gray" format="reference|color" />
+    <attr name="page_main_stop_buttom" format="reference" />
+    <attr name="page_main_stop_buttom_press" format="reference" />
+
+</resources>
