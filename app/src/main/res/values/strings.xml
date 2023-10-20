@@ -46,9 +46,12 @@
     <string name="success"  >成功</string>
     <string name="send"  >发送</string>
     <string name="pause"  >暂停</string>
+    <string name="scml"  >生成命令</string>
     <string name="goon"  >继续</string>
     <string name="save"  >保存</string>
     <string name="t2_tx"  >串口设置 ：</string>
+    <string name="ml_tx"  >命令设置 ：</string>
+    <string name="mlset_tx"  >设置默认值</string>
     <string name="verification_hint"  >请输入密码,确定后软件会重启</string>
     <string name="verification_hint1"  >请输入密码</string>
     <string name="null_message_input_vir"  >密码不能为空，请重新输入</string>
@@ -91,7 +94,7 @@
     <string name="height_count_tx">计算高程</string>
     <string name="height_set_tx">设置高程</string>
     <string name="lmd">灵敏度</string>
-
+    <string name="lx">类型:</string>
 
     <string name="sza">设置A</string>
     <string name="szb">设置B</string>
@@ -185,4 +188,6 @@
 
 
     <string name="yxnr">請輸入有效的内容</string>
+    <string name="zh">帧号:</string>
+    <string name="nr">内容:</string>
 </resources>
