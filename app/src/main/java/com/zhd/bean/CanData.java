@@ -13,5 +13,6 @@ public class CanData {
         this.id_extend = id_extend;
         this.frame_remote = frame_remote;
         this.data = data;
+
     }
 }

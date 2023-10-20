@@ -91,7 +91,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
     implementation project(path: ':CorsNet')
     implementation project(path: ':ZHDCorsNet')
-    compile(name: 'libqxwz_release_v1.1.0', ext: 'aar')
+    implementation(name: 'libqxwz_release_v1.1.0', ext: 'aar')
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'

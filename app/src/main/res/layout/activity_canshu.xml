@@ -230,7 +230,7 @@
         android:layout_height="400dp"
         android:layout_below="@+id/v1"
         android:layout_marginTop="20dp"
-        android:visibility="invisible">
+        android:visibility="visible">
 
         <RelativeLayout
             android:id="@+id/rll04"
@@ -367,7 +367,7 @@
         android:layout_height="400dp"
         android:layout_below="@+id/v1"
         android:layout_marginTop="20dp"
-        android:visibility="visible">
+        android:visibility="invisible">
 
         <RelativeLayout
             android:id="@+id/rll06"
@@ -429,15 +429,15 @@
                 android:orientation="horizontal">
 
                 <Spinner
-                    style="@style/text_verySmall"
                     android:id="@+id/sp_channel"
+                    style="@style/text_verySmall"
                     android:layout_width="150dp"
                     android:layout_height="fill_parent"
-                    android:gravity="center"/>
+                    android:gravity="center" />
 
                 <Spinner
-                    style="@style/text_verySmall"
                     android:id="@+id/sp_baud"
+                    style="@style/text_verySmall"
                     android:layout_width="150dp"
                     android:layout_height="fill_parent"
                     android:gravity="center" />
@@ -454,26 +454,34 @@
                     android:id="@+id/et_mask"
                     android:layout_width="150dp"
                     android:layout_height="fill_parent"
-                    android:gravity="center"
                     android:digits="@string/hex"
+                    android:gravity="center"
                     android:hint="ID(Hex)"
                     android:maxLength="8"
                     android:text="000000F1" />
 
                 <CheckBox
-                    style="@style/text_verySmall"
                     android:id="@+id/gl"
+                    style="@style/text_verySmall"
                     android:layout_width="match_parent"
                     android:layout_height="fill_parent"
                     android:gravity="center"
                     android:text="@string/filter" />
 
+                <CheckBox
+                    android:id="@+id/cb_loop"
+                    style="@style/text_verySmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="@string/loop" />
+
                 <EditText
                     android:id="@+id/et_count"
-                    android:layout_marginLeft="120dp"
                     android:layout_width="60dp"
-
                     android:layout_height="fill_parent"
+
+                    android:layout_marginLeft="45dp"
                     android:gravity="center"
                     android:hint="10000000"
                     android:inputType="number"
@@ -487,14 +495,15 @@
                     android:gravity="center"
                     android:text="@string/count" />
 
-
-                <CheckBox
-                    style="@style/text_verySmall"
-                    android:id="@+id/cb_loop"
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/btn_ml"
+                    style="@style/setnt_button"
+                    android:layout_width="120dp"
                     android:layout_height="fill_parent"
+                    android:layout_marginLeft="8dp"
                     android:gravity="center"
-                    android:text="@string/loop" />
+                    android:text="@string/scml" />
+
 
             </LinearLayout>
 
@@ -505,8 +514,8 @@
                 android:orientation="horizontal">
 
                 <Spinner
-                    style="@style/text_verySmall"
                     android:id="@+id/sp_idtype"
+                    style="@style/text_verySmall"
                     android:layout_width="150dp"
                     android:layout_height="fill_parent"
                     android:gravity="center" />
@@ -523,31 +532,33 @@
                     android:layout_width="55dp"
                     android:layout_height="fill_parent"
                     android:gravity="center"
-                    android:text="(Hex)帧"/>
+                    android:text="(Hex)帧" />
 
                 <EditText
                     android:id="@+id/et_id"
-                    android:layout_width="50dp"
+                    android:layout_width="100dp"
                     android:layout_height="fill_parent"
-                    android:gravity="center"
                     android:digits="@string/hex"
+                    android:gravity="center"
                     android:hint="ID(Hex)"
                     android:maxLength="8"
                     android:text="F2" />
 
                 <TextView
                     style="@style/text_verySmall"
-                    android:layout_width="100dp"
+                    android:layout_width="50dp"
                     android:layout_height="fill_parent"
                     android:gravity="center"
-                    android:text="data(Hex)" />
+                    android:text="(Hex)data" />
+
+
 
                 <EditText
                     android:id="@+id/et_data"
                     android:layout_width="200dp"
                     android:layout_height="fill_parent"
-                    android:gravity="center"
                     android:digits="@string/hex"
+                    android:gravity="center"
                     android:hint="Data(Hex)"
                     android:maxLength="16"
                     android:text="0000000000000000" />
@@ -560,7 +571,7 @@
                     android:hint="1000"
                     android:inputType="number"
                     android:maxLength="4"
-                    android:text="50" />
+                    android:text="100" />
 
                 <TextView
                     style="@style/text_verySmall"
@@ -570,24 +581,20 @@
                     android:text="ms" />
 
                 <Button
-                    style="@style/setnt_button"
                     android:id="@+id/btn_send"
+                    style="@style/setnt_button"
                     android:layout_width="60dp"
                     android:layout_height="fill_parent"
                     android:gravity="center"
                     android:text="@string/send" />
 
                 <Button
-                    style="@style/setnt_button"
                     android:id="@+id/btn_pasue"
+                    style="@style/setnt_button"
                     android:layout_width="60dp"
                     android:layout_height="fill_parent"
                     android:gravity="center"
                     android:text="@string/pause" />
-
-
-
-
 
 
             </LinearLayout>
@@ -616,5 +623,492 @@
             android:text="" />
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/rllll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        android:background="@color/back"
+        android:visibility="invisible">
 
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/text_verySmall"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/ml_tx" />
+
+            <Spinner
+                android:id="@+id/id_stype"
+                style="@style/text_verySmall"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:gravity="center" />
+
+            <CheckBox
+                android:id="@+id/mlset"
+                style="@style/text_verySmall"
+                android:layout_width="200dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="200dp"
+                android:gravity="center"
+                android:text="@string/mlset_tx" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/l1"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/text_verySmall"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="@string/lx" />
+
+            <Spinner
+                android:id="@+id/lx_stype"
+                style="@style/text_verySmall"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btn_mlcomplete"
+                style="@style/setnt_button"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="200dp"
+                android:text="@string/scml" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/l2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/tt1"
+
+
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/ttt1"
+                        style="@style/text_verySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/lx" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/tt1"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/bb1"
+                        style="@style/setnt_button"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:text="-" />
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/sb1"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="190dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_toRightOf="@+id/lll1"
+                    android:max="255"
+                    android:progress="0"
+                    android:secondaryProgress="0" />
+
+                <LinearLayout
+                    android:id="@+id/lll1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/sb1"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/bb1_1"
+                        style="@style/setnt_button"
+                        android:layout_width="25dp"
+
+
+                        android:layout_height="25dp"
+
+                        android:text="+" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="250dp"
+                    android:layout_height="80dp"
+
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/tt1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:text="1000"
+                        />
+                    <TextView
+                        android:id="@+id/textv1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:text="mA"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/tt2"
+
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/ttt2"
+                        style="@style/text_verySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="压力传感器低压力点模拟量" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lll2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/tt2"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/bb2"
+                        style="@style/setnt_button"
+                        android:layout_width="25dp"
+
+
+                        android:layout_height="25dp"
+
+                        android:text="-" />
+                </LinearLayout>
+
+                <SeekBar
+                    android:id="@+id/sb2"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="190dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_toRightOf="@+id/lll2"
+                    android:max="20"
+                    android:progress="0"
+                    android:secondaryProgress="0" />
+
+                <LinearLayout
+                    android:id="@+id/lll2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/sb2"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/bb2_1"
+                        style="@style/setnt_button"
+                        android:layout_width="25dp"
+
+
+                        android:layout_height="25dp"
+
+                        android:text="+" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="250dp"
+                    android:layout_height="80dp"
+
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/tt2"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:text="1000"
+                        />
+                    <TextView
+                        android:id="@+id/textv2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textStyle="bold"
+                        android:text="mA"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/l3"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:id="@+id/tt3"
+
+
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/ttt3"
+                        style="@style/text_verySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/lx" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit1"
+                    style="@style/edittext_name"
+                    android:inputType="phone"
+                    android:layout_width="200dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/tt3"
+                    android:gravity="center"
+                    android:background="@color/textback"
+                    android:layout_height="50dp"
+
+                    />
+                <TextView
+                    android:id="@+id/edit1_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    style="@style/text_verySmall"
+                    android:layout_toRightOf="@+id/tt3"
+                    android:gravity="center"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/tt4"
+
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/ttt4"
+                        style="@style/text_verySmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="压力传感器低压力点模拟量" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit2"
+                    style="@style/edittext_name"
+                    android:layout_width="200dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/tt4"
+                    android:gravity="center"
+                    android:inputType="phone"
+                    android:background="@color/textback"
+                    android:layout_height="50dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/edit2_1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    style="@style/text_verySmall"
+                    android:layout_toRightOf="@+id/tt3"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp">
+
+            <TextView
+                style="@style/text_verySmall"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="@string/zh" />
+
+
+            <EditText
+                android:id="@+id/zhid"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:enabled="false"
+                android:gravity="center"
+                android:lines="1"
+                android:text="18A" />
+
+            <TextView
+                style="@style/text_verySmall"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:text="@string/nr" />
+
+
+            <EditText
+                android:id="@+id/zhcontnt"
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:ems="10"
+                android:enabled="false"
+                android:gravity="center"
+                android:lines="1"
+                android:text="0000000000000000" />
+
+
+            <Button
+                android:id="@+id/btn_mlok"
+
+                style="@style/setnt_button"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:text="@string/ok" />
+
+            <Button
+                android:id="@+id/btn_mlcancel"
+
+                style="@style/setnt_button"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="50dp"
+                android:text="@string/cancel" />
+        </LinearLayout>
+    </RelativeLayout>
 </RelativeLayout>
