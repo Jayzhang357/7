@@ -19,7 +19,7 @@
             style="@style/text_18_ffffff"
             android:layout_width="fill_parent"
             android:layout_height="30sp"
-            android:background="@drawable/SimpleSteer_blue"
+            android:background="@drawable/darkgreen"
             android:gravity="center"
             android:text="@string/title_alert"
             android:visibility="visible" />
@@ -67,20 +67,18 @@
 
             <Button
                 android:id="@+id/positiveButton"
-                style="@style/text_15_ffffff_sdw"
+                style="@style/gnss_setting_button_b"
                 android:layout_width="114.0dp"
                 android:layout_height="70dp"
-                android:background="@drawable/selector_normal_btn"
-                android:gravity="center"
+                 android:gravity="center"
                 android:text="@string/ok" />
 
             <Button
                 android:id="@+id/negativeButton"
-                style="@style/text_15_ffffff_sdw"
+                style="@style/gnss_setting_button_b"
                 android:layout_width="114.0dp"
                 android:layout_height="70dp"
                 android:layout_marginLeft="20.0dp"
-                android:background="@drawable/selector_normal_btn"
                 android:gravity="center"
                 android:text="@string/cancel" />
         </LinearLayout>

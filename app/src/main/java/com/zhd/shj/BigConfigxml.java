@@ -3,7 +3,6 @@ package com.zhd.shj;
 import android.content.Context;
 import android.os.Environment;
 import android.util.Xml;
-import android.widget.EditText;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -49,11 +48,14 @@ public class BigConfigxml implements Serializable {
     public String sis = "52d7937dc63ffba8";// 请填写您申请的sis
     public String Compath = "/dev/ttyS3";//
     public String ip = "203.107.45.154";//
-    public int kzzd=20;
-    public int kzlmd=5;
-    public int wdcs=100;
-    public int ycxz=5;
-    public int sdwsx=10;
+    public int kzzd=5;
+    public int kzlmd=20;
+    public int uddisplacement =100;
+    public int jiaodu1_min =-90;
+    public int jiaodu2_min =-90;
+
+    public int jiaodu1_max =90;
+    public int jiaodu2_max =90;
     public int port = 8002;//
     public  int Language=0;
     public int differenstyle=0;
@@ -174,26 +176,42 @@ public class BigConfigxml implements Serializable {
                      else if ("wdcs".equals(tagName)) {
                          value = parse.nextText();
                          if (value == null) {
-                             wdcs=6000;
+                             uddisplacement =6000;
                              return;
                          }
-                         wdcs=Integer.parseInt(value);
+                         uddisplacement =Integer.parseInt(value);
                      }
-                     else if ("ycxz".equals(tagName)) {
+                     else if ("jiaodu1_min".equals(tagName)) {
                          value = parse.nextText();
                          if (value == null) {
-                             ycxz=6000;
+                             jiaodu1_min =-90;
                              return;
                          }
-                         ycxz=Integer.parseInt(value);
+                         jiaodu1_min =Integer.parseInt(value);
                      }
-                     else if ("sdwsx".equals(tagName)) {
+                     else if ("jiaodu2_min".equals(tagName)) {
                          value = parse.nextText();
                          if (value == null) {
-                             sdwsx=6000;
+                             jiaodu2_min =-90;
                              return;
                          }
-                         sdwsx=Integer.parseInt(value);
+                         jiaodu2_min =Integer.parseInt(value);
+                     }
+                     else if ("jiaodu1_max".equals(tagName)) {
+                         value = parse.nextText();
+                         if (value == null) {
+                             jiaodu1_max =90;
+                             return;
+                         }
+                         jiaodu1_max =Integer.parseInt(value);
+                     }
+                     else if ("jiaodu2_max".equals(tagName)) {
+                         value = parse.nextText();
+                         if (value == null) {
+                             jiaodu2_max =-90;
+                             return;
+                         }
+                         jiaodu2_max =Integer.parseInt(value);
                      }
                      else if ("Sourece".equals(tagName)) {
                          value = parse.nextText();
@@ -298,16 +316,25 @@ public class BigConfigxml implements Serializable {
             serializer.endTag("", "kzlmd");
             // wdcs
             serializer.startTag("", "wdcs");
-            serializer.text(String.valueOf(wdcs));
+            serializer.text(String.valueOf(uddisplacement));
             serializer.endTag("", "wdcs");
-            // ycxz
-            serializer.startTag("", "ycxz");
-            serializer.text(String.valueOf(ycxz));
-            serializer.endTag("", "ycxz");
-            // sdwsx
-            serializer.startTag("", "sdwsx");
-            serializer.text(String.valueOf(sdwsx));
-            serializer.endTag("", "sdwsx");
+            // jiaodu1_min
+            serializer.startTag("", "jiaodu1_min");
+            serializer.text(String.valueOf(jiaodu1_min));
+            serializer.endTag("", "jiaodu1_min");
+            // jiaodu2_min
+            serializer.startTag("", "jiaodu2_min");
+            serializer.text(String.valueOf(jiaodu2_min));
+            serializer.endTag("", "jiaodu2_min");
+
+            // jiaodu1_max
+            serializer.startTag("", "jiaodu1_max");
+            serializer.text(String.valueOf(jiaodu1_max));
+            serializer.endTag("", "jiaodu1_max");
+            // jiaodu2_max
+            serializer.startTag("", "jiaodu2_max");
+            serializer.text(String.valueOf(jiaodu2_max));
+            serializer.endTag("", "jiaodu2_max");
             // Language
             serializer.startTag("", "Language");
             serializer.text(Language+"");

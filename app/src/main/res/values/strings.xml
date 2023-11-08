@@ -25,6 +25,7 @@
     <string name="upgradeing_me"  >升级中请耐心等待,升级过程中切记不能断电！</string>
     <string name="fail_upgrade"  >升级失败</string>
     <string name="Successful_upgrade"  >升级成功</string>
+    <string name="Successful_upgrade_1"  >升级成功,请重启电源！</string>
     <string name="title_alert"  >提示</string>
     <string name="TimeOutUpgrade"  >网络超时</string>
     <string name="UrlErrorUpgrade"  >更新地址不正确！</string>
@@ -45,10 +46,14 @@
     <string name="CancleAutoUpgrade"  >自动更新已经取消！</string>
     <string name="success"  >成功</string>
     <string name="send"  >发送</string>
+    <string name="sendml"  >发送命令</string>
+    <string name="mlml"  >默认命令</string>
     <string name="pause"  >暂停</string>
     <string name="scml"  >生成命令</string>
     <string name="goon"  >继续</string>
     <string name="save"  >保存</string>
+    <string name="time"  >时间：</string>
+    <string name="d"  >到</string>
     <string name="t2_tx"  >串口设置 ：</string>
     <string name="ml_tx"  >命令设置 ：</string>
     <string name="mlset_tx"  >设置默认值</string>
@@ -83,7 +88,7 @@
     <string name="id_tx">编号</string>
 
     <string name="jobname_tx">作业名称</string>
-    <string name="njkd_tx">农具宽度</string>
+    <string name="njkd_tx">农具宽度(米)</string>
     <string name="jjh_tx">交接行</string>
     <string name="njpy_tx">农具偏移</string>
     <string name="njpy_tx_1">农具\n偏移</string>
@@ -110,11 +115,16 @@
     <string name="zylx">作业类型</string>
     <string name="job_name">作业名称</string>
     <string name="job_name_exit">作业名称已存在</string>
+    <string name="width_error">请输入农具宽度</string>
+
     <string name="alert_notice_IsDelete"    >确定要删除吗？</string>
     <string name="mes_6"    >请选择作业</string>
     <string name="mes_5"    >请选择要删除的作业轨迹</string>
 
     <string name="setmes"    >請輸入信息</string>
+
+
+    <string name="setmes1"    >最小角度大于最大角度了</string>
     <string name="sta"    >卫星</string>
     <string name="speed"    >速度</string>
     <string name="style"    >模式</string>
@@ -141,16 +151,16 @@
     <string name="bksz"    >板卡设置</string>
     <string name="cansz"    >can调试</string>
     <string name="kzjd"    >控制精度</string>
-    <string name="kzlmd"    >控制灵敏度</string>
-    <string name="wdcs"    >温度参数</string>
+    <string name="kzlmd"    >天线到铲刀距离</string>
+    <string name="wdcs"    >最高铲刀高度</string>
     <string name="cdsz"    >采点设置</string>
-    <string name="ycxz"    >延迟限制</string>
-    <string name="sdwxs"    >锁定卫星数</string>
+    <string name="ycxz"    >角度1</string>
+    <string name="sdwxs"    >角度2</string>
     <string name="hfmrcs"    >恢复默认参数</string>
     <string name="mjgs"    >面积估算(亩)</string>
     <string name="dsgd1"    >地势高度（m）</string>
     <string name="dqgd"    >当前高程（cm）</string>
-    <string name="wtz10"    >微调值：10.0cm</string>
+    <string name="wtz10"    >微调值：1.0cm</string>
     <string name="hfccsz"    >恢复出厂设置</string>
     <string name="yysz"    >语言设置</string>
     <string name="mes55"    >謹慎使用此功能，点击恢复出厂设置按钮后，参数设置、作业数据等将被清除，恢复到系统初始状态.</string>
@@ -158,9 +168,12 @@
     <string name="cpmc"    >产品名称:</string>
     <string name="cpmcxt"    >北斗卫星平地系统</string>
     <string name="gsmc"    >公司名称:</string>
-    <string name="gsmcxt"    >惠农科技有限公司</string>
+    <string name="gsmcxt"    >慧农科技有限公司</string>
     <string name="appversiont"    >APP软件版本:</string>
+
+    <string name="kzqversiont"    >控制器版本:</string>
     <string name="appupdate"    >APP软件升级</string>
+    <string name="kjqupdate"    >控制器升级</string>
     <string name="updateper"    >下载进度</string>
     <string name="cancleupdate"    >取消下载</string>
     <string name="mesgii"    >请输入想要搜索的作业名称</string>
@@ -190,4 +203,14 @@
     <string name="yxnr">請輸入有效的内容</string>
     <string name="zh">帧号:</string>
     <string name="nr">内容:</string>
+
+
+
+    <string name="zj">自检</string>
+    <string name="error_1">固定解</string>
+    <string name="error_2">遥控器</string>
+    <string name="error_3">倾角传感器</string>
+
+
+    <string name="kzmess"  >控制器正在升级,请耐心等待</string>
 </resources>

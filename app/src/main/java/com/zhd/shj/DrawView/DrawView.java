@@ -156,6 +156,7 @@ public class DrawView extends View {
             double[] xy = abc;
            Matrix     matrix = new Matrix();
             matrix.setRotate(Yaw);
+            Log.e("vtg方向QQQ",Yaw+"");
             matrix.postScale(0.3f, 0.3f);
 
             Bitmap scaledBitmap = Bitmap.createBitmap(mbitmap, 0, 0, mbitmap.getWidth(), mbitmap.getHeight(), matrix, true);
@@ -180,7 +181,7 @@ public class DrawView extends View {
 
             Bitmap scaledBitmap = Bitmap.createBitmap(mbitmap1, 0, 0, mbitmap1.getWidth(), mbitmap1.getHeight(), matrix, true);
             float centerX = 150- scaledBitmap.getWidth() / 2; // 计算中心点的 x 坐标
-            float centerY = 50 - scaledBitmap.getHeight() / 2; // 计算中心点的 y 坐标
+            float centerY = 80 - scaledBitmap.getHeight() / 2; // 计算中心点的 y 坐标
             canvas.save(); // 保存当前的画布状态
             canvas.translate(centerX, centerY); // 将画布的坐标轴移到中心点
             canvas.drawBitmap(scaledBitmap, 0, 0, null); // 绘制 Bitmap

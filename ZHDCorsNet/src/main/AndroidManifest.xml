@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- for  HTTPClientHelper -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <!-- for  write gga file into sdcard -->
+    <!-- for  write **gga file into sdcard -->
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <!-- for isGpsOpen -->

@@ -1,8 +1,10 @@
 package com.zhd;
 
+import android.app.AlertDialog;
 import android.app.Application;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Environment;
@@ -23,6 +25,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 public class AppHelper extends Application {
+    public static String kzqversion;
     private static Context mContext;
     public static  String AS="";
     public  static String AK="";
@@ -50,6 +53,54 @@ public class AppHelper extends Application {
 
         super.onCreate();
         mContext = getApplicationContext();
+    }
+    public static String get8(int wordValue) {
+        String abc = Integer.toHexString(wordValue).toUpperCase();
+        if (abc.length() == 1)
+            abc = "0" + abc;
+
+
+        return abc;
+    }
+   public static void showmessage(Context context, String abc,String ok)
+   {
+       AlertDialog.Builder builder = new AlertDialog.Builder(context);
+
+       builder.setMessage(abc); // 设置对话框内容
+       builder.setPositiveButton(ok, new DialogInterface.OnClickListener() {
+           public void onClick(DialogInterface dialog, int whichButton) {
+               // 点击"确定"按钮后的处理
+               dialog.dismiss();
+           }
+       });
+
+       AlertDialog dialog = builder.create();
+       dialog.show();
+   }
+    public static String get16(int wordValue) {
+
+        String hexString = String.format("%04X", wordValue);
+
+
+        String highByte = hexString.substring(0, 2);
+        String lowByte = hexString.substring(2, 4);
+
+        return highByte + lowByte;
+    }
+    public static byte[] getBytes(String hexString) {
+        if (hexString == null) {
+            return new byte[]{};
+        }
+        if (hexString.length() % 2 != 0) {
+            hexString = "0" + hexString;
+        }
+
+        int size = hexString.length() / 2;
+        byte[] hex = new byte[size];
+        for (int i = 0; i < size; i++) {
+            hex[i] = Integer.valueOf(hexString.substring(i * 2, i * 2 + 2), 16).byteValue();
+        }
+        return hex;
     }
     public static Context getContext() {
         return mContext;

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadeScrollbars="false"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <TableLayout style="@style/page_vehicle_table" >
+
+            <RelativeLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:text="@string/zj"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normal_size" />
+
+                <ImageView
+                    android:id="@+id/ivclose"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_close_error" />
+            </RelativeLayout>
+
+            <TableRow android:paddingLeft="2dp" >
+
+                <TextView
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
+                    android:text="@string/error_1" />
+
+                <ImageView
+                    android:id="@+id/ivError_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_error" />
+            </TableRow>
+
+            <TableRow android:paddingLeft="2dp" >
+
+                <TextView
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
+                    android:text="@string/error_2" />
+
+                <ImageView
+                    android:id="@+id/ivError_2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_error" />
+            </TableRow>
+
+            <TableRow android:paddingLeft="2dp" >
+
+                <TextView
+                    style="@style/page_vehicle_tablecell"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
+                    android:text="@string/error_3" />
+
+                <ImageView
+                    android:id="@+id/ivError_3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_error" />
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

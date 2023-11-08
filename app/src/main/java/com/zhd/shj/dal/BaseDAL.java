@@ -92,7 +92,18 @@ public class BaseDAL extends SQLiteOpenHelper {
 		try {
 			cursor = db.query(mTableName, null, null, null, null, null,
 					orderField + " " + orderType);
+			if (cursor.getColumnCount() == 18) {
+				db.execSQL("ALTER  TABLE   HF_Job  ADD COLUMN  setHsmall DOUBLE ");
 
+				cursor = db.query(mTableName, null, null,
+						null, null, null, orderField + " " + orderType);
+			}
+			if (cursor.getColumnCount() == 19) {
+				db.execSQL("ALTER  TABLE   HF_Job  ADD COLUMN  Width DOUBLE ");
+
+				cursor = db.query(mTableName, null, null,
+						null, null, null, orderField + " " + orderType);
+			}
 			if (cursor != null && cursor.moveToFirst()) {
 				while (!cursor.isAfterLast()) {
 					objList.add(this.dataReaderToEntity(cursor));
@@ -211,13 +222,19 @@ public class BaseDAL extends SQLiteOpenHelper {
 			cursor = db.query(mTableName, null, selection, selectionArgs,
 					null, null, orderField);
 
-			/*if (cursor.getColumnCount() == 26) {
-				db.execSQL("ALTER  TABLE   HF_Job  ADD COLUMN  AB_displament DOUBLE ");
-				db.execSQL("ALTER  TABLE   HF_Job_ABLine  ADD COLUMN  AB_displament DOUBLE ");
+			Log.v("数据库","4"+cursor.getColumnCount());
+			if (cursor.getColumnCount() == 18) {
+				db.execSQL("ALTER  TABLE   HF_Job  ADD COLUMN  setHsmall DOUBLE ");
+
 				cursor = db.query(mTableName, null, selection,
 						selectionArgs, null, null, orderField);
-			}*/
+			}
+			if (cursor.getColumnCount() == 19) {
+				db.execSQL("ALTER  TABLE   HF_Job  ADD COLUMN  Width DOUBLE ");
 
+				cursor = db.query(mTableName, null, selection, selectionArgs,
+						null, null, orderField);
+			}
 			if (cursor.moveToFirst()) {
 				while (!cursor.isAfterLast()) {
 					objList.add(this.dataReaderToEntity(cursor));

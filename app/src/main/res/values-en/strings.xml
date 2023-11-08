@@ -16,6 +16,7 @@
     <string name="oem"     >OEM</string>
     <string name="get_file"     >The upgrade file obtained by the server is</string>
     <string name="upgrade_sure"     >Are you sure you want to upgrade?</string>
+    <string name="Successful_upgrade_1"  >Upgrade successful, please restart the power!</string>
     <string name="Current_Version"     >current version</string>
     <string name="upgrade_choice"     >Choose upgrade method</string>
     <string name="upgrade_local"     >local</string>
@@ -48,6 +49,7 @@
     <string name="pause"     >pause</string>
     <string name="goon"     >continue</string>
     <string name="save"     >save</string>
+    <string name="time"  >time：</string>
     <string name="t2_tx"     >Serial port：</string>
     <string name="verification_hint"     >Please enter the password. Once confirmed, the software will restart.</string>
     <string name="verification_hint1"     >Please enter the password</string>
@@ -80,7 +82,8 @@
     <string name="id_tx">id</string>
 
     <string name="jobname_tx">job name</string>
-    <string name="njkd_tx">Tool width</string>
+    <string name="njkd_tx">Tool width（M）</string>
+    <string name="width_error">Please enter the width of the tool</string>
     <string name="jjh_tx">Handover</string>
     <string name="njpy_tx">Agricultural tool offset</string>
     <string name="njpy_tx_1">Agricultural tool \n offset</string>
@@ -112,6 +115,7 @@
     <string name="mes_5"    >Please select the job trajectory to delete</string>
 
     <string name="setmes"    >Please enter information</string>
+    <string name="setmes1"    >The minimum angle is greater than the maximum angle </string>
     <string name="sta"    >satellite</string>
     <string name="speed"    >speed</string>
     <string name="style"    >mode</string>
@@ -139,7 +143,7 @@
     <string name="cansz"    >Can debug</string>
     <string name="kzjd"    >Accuracy</string>
     <string name="kzlmd"    >Sensitivity</string>
-    <string name="wdcs"    >Temperature</string>
+    <string name="wdcs"    >Displacement</string>
     <string name="cdsz"    >Collection point settings</string>
     <string name="ycxz"    >Delay </string>
     <string name="sdwxs"    >Locked satellites</string>
@@ -147,7 +151,7 @@
     <string name="mjgs"    >Area (mu)</string>
     <string name="dsgd1"    >Terrain height (m)</string>
     <string name="dqgd"    >Current (cm)</string>
-    <string name="wtz10"    > adjust: 10.0cm</string>
+    <string name="wtz10"    > adjust: 1.0cm</string>
     <string name="hfccsz"    >Factory reset</string>
     <string name="yysz"    >Language settings</string>
     <string name="mes55"    >Use this function carefully. After clicking the Factory reset button, the parameter settings, operation data, etc. will be cleared and restored to the initial state of the system.</string>
@@ -157,7 +161,9 @@
     <string name="gsmc"    >Corporate name:</string>
     <string name="gsmcxt"    >Huinong Technology Co., Ltd</string>
     <string name="appversiont"    >software version:</string>
+    <string name="kzqversiont"    >Controller version:</string>
     <string name="appupdate"    >software upgrade</string>
+    <string name="kjqupdate"    >Controller upgrade</string>
     <string name="updateper"    >Download progress</string>
     <string name="cancleupdate"    >Cancel Download</string>
     <string name="mesgii"    >Please enter the name of the job you want to search for</string>
@@ -170,4 +176,11 @@
     <string name="sblx"    >Type of device</string>
     <string name="sbid"    >ID of device</string>
     <string name="fssb">failed send </string>
+
+
+    <string name="zj">Self Test</string>
+    <string name="error_1">Fixed solution</string>
+    <string name="error_2">remote control</string>
+    <string name="error_3">tilt sensor</string>
+    <string name="kzmess"  >The controller is being upgraded, please be patient</string>
 </resources>

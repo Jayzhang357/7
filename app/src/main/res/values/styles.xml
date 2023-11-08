@@ -12,9 +12,9 @@
         <item name="android:textColor">@color/backset</item>
     </style>
     <style name="text_Small">
-
+        <item name="android:gravity">left|center_vertical</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">30dp</item>
+        <item name="android:textSize">25dp</item>
         <item name="android:textColor">@color/backset</item>
     </style>
     <style name="text_verySmall">

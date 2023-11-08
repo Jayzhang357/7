@@ -66,146 +66,202 @@
         android:layout_width="fill_parent"
         android:layout_height="400dp"
         android:layout_below="@+id/v1"
-        android:layout_marginTop="20dp"
-        android:visibility="invisible">
 
-        <TextView
-            android:id="@+id/t3"
-            style="@style/text_normal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+        android:visibility="visible">
 
-            android:text="@string/cssz" />
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_marginLeft="60dp"
+          android:layout_marginRight="60dp"
+          android:layout_marginTop="20dp"
+          android:layout_width="fill_parent"
+          android:layout_height="180dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/kzjdt"
+                style="@style/text_Small"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
 
-        <TextView
-            android:id="@+id/kzjdt"
-            style="@style/text_Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/t3"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/kzjd" />
+                android:text="@string/kzjd" />
 
-        <EditText
-            android:id="@+id/kzzd"
-            style="@style/edittext_namecs"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/t3"
-            android:layout_marginLeft="200dp"
-            android:background="@color/textback"
-            android:inputType="number" />
+            <TextView
+                android:id="@+id/kzlmdt"
+                style="@style/text_Small"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
 
+                android:text="@string/kzlmd" />
+            <TextView
+                android:id="@+id/wdcst"
+                style="@style/text_Small"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
 
-        <TextView
-            android:id="@+id/kzlmdt"
-            style="@style/text_Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/t3"
-            android:layout_marginLeft="400dp"
-            android:layout_marginTop="10dp"
+                android:text="@string/wdcs" />
 
-            android:text="@string/kzlmd" />
+        </LinearLayout>
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="100dp"
 
-        <EditText
-            android:id="@+id/kzlmd"
-            style="@style/edittext_namecs"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/t3"
-            android:layout_marginLeft="560dp"
-            android:background="@color/textback"
-            android:inputType="number" />
-
-        <TextView
-            android:id="@+id/wdcst"
-            style="@style/text_Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/t3"
-            android:layout_marginLeft="730dp"
-            android:layout_marginTop="10dp"
-
-            android:text="@string/wdcs" />
-
-        <EditText
-            android:id="@+id/wdcs"
-            style="@style/edittext_namecs"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/t3"
-            android:layout_marginLeft="870dp"
-            android:background="@color/textback"
-            android:inputType="number" />
+              android:layout_height="fill_parent">
+              <EditText
+                  android:id="@+id/kzzd"
+                  style="@style/edittext_namecs"
+                  android:layout_width="100dp"
+                  android:layout_height="50dp"
+                  android:background="@color/textback"
+                  android:inputType="number" />
+              <EditText
+                  android:id="@+id/kzlmd"
+                  style="@style/edittext_namecs"
+                  android:layout_width="100dp"
+                  android:layout_height="50dp"
+                  android:layout_marginTop="10dp"
+                  android:background="@color/textback"
+                  android:inputType="number" />
+              <EditText
+                  android:id="@+id/wdcs"
+                  style="@style/edittext_namecs"
+                  android:layout_width="100dp"
+                  android:layout_height="50dp"
+                  android:layout_marginTop="10dp"
+                  android:background="@color/textback"
+                  android:inputType="number" />
 
 
-        <TextView
-            android:id="@+id/t4"
-            style="@style/text_normal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/kzjdt"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="10dp"
+          </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            android:layout_width="2dp"
+            android:background="@color/white"
+            android:layout_height="fill_parent"/>
 
-            android:text="@string/cdsz" />
+          <LinearLayout
+              android:layout_marginLeft="40dp"
+              android:orientation="vertical"
+              android:layout_width="100dp"
+              android:layout_height="fill_parent">
+              <TextView
 
+                  style="@style/text_Small"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
 
-        <TextView
-            android:id="@+id/ycxzt"
-            style="@style/text_Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/t4"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="10dp"
+                  android:text="@string/ycxz" />
+              <TextView
 
-            android:text="@string/ycxz" />
-
-        <EditText
-            android:id="@+id/ycxz"
-            style="@style/edittext_namecs"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/t4"
-            android:layout_marginLeft="200dp"
-            android:background="@color/textback"
-            android:inputType="number" />
+                  style="@style/text_Small"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
 
 
-        <TextView
-            android:id="@+id/sdwsxt"
-            style="@style/text_Small"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/t4"
-            android:layout_marginLeft="400dp"
-            android:layout_marginTop="10dp"
+                  android:text="@string/sdwxs" />
+          </LinearLayout>
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="100dp"
+              android:layout_height="fill_parent">
+              <EditText
+                  android:id="@+id/jiaodu1_min"
+                  style="@style/edittext_namecs"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@color/textback"
+                  android:inputType="numberSigned" />
 
-            android:text="@string/sdwxs" />
+              <EditText
+                  android:id="@+id/jiaodu2_min"
+                  style="@style/edittext_namecs"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                 android:background="@color/textback"
+                  android:inputType="numberSigned" />
 
-        <EditText
-            android:id="@+id/sdwsx"
-            style="@style/edittext_namecs"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/t4"
-            android:layout_marginLeft="560dp"
-            android:background="@color/textback"
-            android:inputType="number" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginLeft="10dp"
+              android:orientation="vertical"
+              android:layout_width="40dp"
+              android:layout_height="fill_parent">
+              <TextView
+                  style="@style/text_Small"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:gravity="center"
+                  android:text="@string/d" />
+              <TextView
+                  style="@style/text_Small"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:gravity="center"
+                  android:text="@string/d"  />
+          </LinearLayout>
+          <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="100dp"
+              android:layout_height="fill_parent">
+              <EditText
+                  android:id="@+id/jiaodu1_max"
+                  style="@style/edittext_namecs"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@color/textback"
+                  android:inputType="number" />
+
+              <EditText
+                  android:id="@+id/jiaodu2_max"
+                  style="@style/edittext_namecs"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="@color/textback"
+                  android:inputType="number" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_marginLeft="10dp"
+              android:orientation="vertical"
+              android:layout_width="100dp"
+              android:layout_height="fill_parent">
+              <TextView
+                  android:id="@+id/ycxzt"
+                  style="@style/text_Small"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:textColor="@color/blue"
+              />
+              <TextView
+                  android:id="@+id/sdwsxt"
+                  style="@style/text_Small"
+                  android:layout_marginTop="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:textColor="@color/blue"
+               />
+          </LinearLayout>
+      </LinearLayout>
+
 
         <Button
             android:id="@+id/hfmrcs"
             style="@style/gnss_setting_button_b"
             android:layout_width="200dp"
             android:layout_height="70dp"
-            android:layout_below="@+id/sdwsx"
+
 
             android:layout_marginLeft="200dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="280dp"
             android:focusable="false"
             android:text="@string/hfmrcs" />
 
@@ -214,9 +270,9 @@
             style="@style/gnss_setting_button_b"
             android:layout_width="200dp"
             android:layout_height="70dp"
-            android:layout_below="@+id/sdwsx"
+
             android:layout_alignParentRight="true"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="280dp"
             android:layout_marginRight="200dp"
             android:focusable="false"
             android:text="@string/save" />
@@ -230,7 +286,7 @@
         android:layout_height="400dp"
         android:layout_below="@+id/v1"
         android:layout_marginTop="20dp"
-        android:visibility="visible">
+        android:visibility="invisible">
 
         <RelativeLayout
             android:id="@+id/rll04"
@@ -498,7 +554,7 @@
                 <Button
                     android:id="@+id/btn_ml"
                     style="@style/setnt_button"
-                    android:layout_width="120dp"
+                    android:layout_width="110dp"
                     android:layout_height="fill_parent"
                     android:layout_marginLeft="8dp"
                     android:gravity="center"
@@ -542,7 +598,7 @@
                     android:gravity="center"
                     android:hint="ID(Hex)"
                     android:maxLength="8"
-                    android:text="F2" />
+                    android:text="28B " />
 
                 <TextView
                     style="@style/text_verySmall"
@@ -550,7 +606,6 @@
                     android:layout_height="fill_parent"
                     android:gravity="center"
                     android:text="(Hex)data" />
-
 
 
                 <EditText
@@ -635,9 +690,9 @@
             android:id="@+id/l1"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="5dp">
 
             <TextView
@@ -655,19 +710,19 @@
                 android:layout_width="250dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="20dp"
                 android:gravity="center" />
 
-            <CheckBox
+
+
+            <Button
                 android:id="@+id/mlset"
-                style="@style/text_verySmall"
-                android:layout_width="200dp"
-                android:layout_height="fill_parent"
-                android:layout_marginLeft="200dp"
-                android:gravity="center"
-                android:text="@string/mlset_tx" />
-
-
+                style="@style/setnt_button"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="205dp"
+                android:text="@string/mlml" />
         </LinearLayout>
 
         <LinearLayout
@@ -675,9 +730,9 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_below="@+id/l1"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="5dp">
 
             <TextView
@@ -695,8 +750,37 @@
                 android:layout_width="250dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="50dp"
+                android:layout_marginLeft="20dp"
                 android:gravity="center" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+
+                android:layout_toRightOf="@+id/lx_stype"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前类型"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textnowstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
 
             <Button
                 android:id="@+id/btn_mlcomplete"
@@ -704,8 +788,17 @@
                 android:layout_width="150dp"
                 android:layout_height="80dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="200dp"
+                android:layout_marginLeft="100dp"
                 android:text="@string/scml" />
+
+            <Button
+                android:id="@+id/btn_sendcomplete"
+                style="@style/setnt_button"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/sendml" />
         </LinearLayout>
 
         <LinearLayout
@@ -713,9 +806,9 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_below="@+id/l2"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
@@ -723,6 +816,7 @@
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_weight="1">
+
                 <LinearLayout
                     android:id="@+id/tt1"
 
@@ -732,6 +826,7 @@
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
+
                     <TextView
                         android:id="@+id/ttt1"
                         style="@style/text_verySmall"
@@ -746,7 +841,7 @@
                     android:id="@+id/lll1"
                     android:layout_width="wrap_content"
                     android:layout_height="80dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_toRightOf="@+id/tt1"
                     android:gravity="center_vertical">
 
@@ -789,34 +884,61 @@
 
                         android:text="+" />
                 </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="250dp"
-                    android:layout_height="80dp"
 
-                    android:layout_marginLeft="50dp"
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+
                     android:layout_toRightOf="@+id/tt1"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/textv1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/red"
-                        android:textStyle="bold"
                         android:text="1000"
-                        />
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:id="@+id/textv1_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/red"
-                        android:textStyle="bold"
                         android:text="mA"
-                        />
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_toRightOf="@+id/lll1_1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前值"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textnowA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
 
             </RelativeLayout>
 
@@ -832,7 +954,7 @@
                     android:layout_width="120dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="0dp"
                     android:gravity="center_vertical">
 
                     <TextView
@@ -849,7 +971,7 @@
                     android:id="@+id/lll2"
                     android:layout_width="wrap_content"
                     android:layout_height="80dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_toRightOf="@+id/tt2"
                     android:gravity="center_vertical">
 
@@ -897,33 +1019,58 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="250dp"
+                    android:layout_width="240dp"
                     android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
 
-                    android:layout_marginLeft="50dp"
                     android:layout_toRightOf="@+id/tt2"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/textv2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/red"
-                        android:textStyle="bold"
                         android:text="1000"
-                        />
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+
                     <TextView
                         android:id="@+id/textv2_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/red"
-                        android:textStyle="bold"
                         android:text="mA"
-                        />
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_toRightOf="@+id/lll2_1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前值"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textnowB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
 
             </RelativeLayout>
         </LinearLayout>
@@ -933,9 +1080,9 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_below="@+id/l3"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
@@ -943,6 +1090,7 @@
                 android:layout_width="0dp"
                 android:layout_height="80dp"
                 android:layout_weight="1">
+
                 <LinearLayout
                     android:id="@+id/tt3"
 
@@ -952,6 +1100,7 @@
                     android:layout_gravity="center_vertical"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
+
                     <TextView
                         android:id="@+id/ttt3"
                         style="@style/text_verySmall"
@@ -964,25 +1113,53 @@
                 <EditText
                     android:id="@+id/edit1"
                     style="@style/edittext_name"
-                    android:inputType="phone"
                     android:layout_width="200dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="50dp"
-                    android:layout_toRightOf="@+id/tt3"
-                    android:gravity="center"
-                    android:background="@color/textback"
                     android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tt3"
+                    android:background="@color/textback"
+                    android:gravity="center"
+                    android:inputType="phone"
 
                     />
+
                 <TextView
                     android:id="@+id/edit1_1"
+                    style="@style/text_verySmall"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    style="@style/text_verySmall"
                     android:layout_toRightOf="@+id/tt3"
+                    android:gravity="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_toRightOf="@+id/edit1_1"
                     android:gravity="center"
-                    />
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前值"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textnowC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
 
 
             </LinearLayout>
@@ -999,7 +1176,7 @@
                     android:layout_width="120dp"
                     android:layout_height="80dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="0dp"
                     android:gravity="center_vertical">
 
                     <TextView
@@ -1016,28 +1193,56 @@
                     android:id="@+id/edit2"
                     style="@style/edittext_name"
                     android:layout_width="200dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_toRightOf="@+id/tt4"
+                    android:background="@color/textback"
                     android:gravity="center"
                     android:inputType="phone"
-                    android:background="@color/textback"
-                    android:layout_height="50dp"
 
                     />
 
                 <TextView
                     android:id="@+id/edit2_1"
+                    style="@style/text_verySmall"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
-                    style="@style/text_verySmall"
                     android:layout_toRightOf="@+id/tt3"
-                    android:gravity="center"
-                    />
+                    android:gravity="center" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_toRightOf="@+id/edit2_1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前值"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textnowD"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -1087,7 +1292,7 @@
                 android:enabled="false"
                 android:gravity="center"
                 android:lines="1"
-                android:text="0000000000000000" />
+                android:text="0100000000000000" />
 
 
             <Button

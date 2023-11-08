@@ -1,7 +1,140 @@
 package com.zhd.utils;
 
+import android.util.Log;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.ArrayList;
+
 public class Utils {
 
+
+    public static byte[] fzcontent(byte[] be, int zs)
+    {
+        int datasize=0;
+        if(be.length/512==zs)
+        {
+            datasize=(int)be.length%512+2;
+            Log.e("长度",datasize+"");
+        }
+        else
+            datasize=514;
+
+        byte[] datasizebyte= Inttobyte(datasize);
+        byte[] zsbyte= Inttobyte(zs);
+        byte[] fzcontentbs=new byte[3+datasize];
+        fzcontentbs[0]=(byte)(0x0C);
+        fzcontentbs[1]=datasizebyte[0];
+        fzcontentbs[2]=datasizebyte[1];
+        fzcontentbs[3]=zsbyte[0];
+        fzcontentbs[4]=zsbyte[1];
+        for(int i=0;i<datasize-2;i++)
+        {
+            fzcontentbs[i+5]=be[zs*512+i];
+        }
+        return  fzcontentbs;
+    }
+
+
+    public static  byte[] getCRC(ArrayList<Byte> abc ,int star,int end) {
+        int checksum = 0;
+
+// 遍历 ArrayList 中的每个 Byte 对象
+        for (int i=star;i<end;i++) {
+            int byteValue = abc.get(i) & 0xFF; // 获取 Byte 对象的无符号值
+            checksum += byteValue; // 累加每个字节的无符号值
+            // 检查溢出并回绕
+        /*    if ((checksum & 0xFFFF0000) != 0) {
+                checksum &= 0xFFFF; // 回绕
+                checksum++; // 回绕位加1
+            }*/
+        }
+
+// 将校验和分成两个字节并存储在 byte[2] 数组中
+        byte[] checksumBytes = new byte[2];
+        checksumBytes[0] = (byte) (checksum & 0xFF); // 低位字节
+        checksumBytes[1] = (byte) ((checksum >> 8) & 0xFF);
+
+        if( checksumBytes[0]==(byte)(0x89))
+        {
+            Log.e("返回字符串","收到88");
+        }
+        return checksumBytes;
+    }
+
+    public static  byte[] getCRC(byte[]  abc ,int star,int end) {
+        int checksum = 0;
+
+// 遍历 ArrayList 中的每个 Byte 对象
+        for (int i=star;i<end;i++) {
+            int byteValue = abc[i] & 0xFF; // 获取 Byte 对象的无符号值
+            checksum += byteValue; // 累加每个字节的无符号值
+            // 检查溢出并回绕
+        /*    if ((checksum & 0xFFFF0000) != 0) {
+                checksum &= 0xFFFF; // 回绕
+                checksum++; // 回绕位加1
+            }*/
+        }
+
+// 将校验和分成两个字节并存储在 byte[2] 数组中
+        byte[] checksumBytes = new byte[2];
+        checksumBytes[0] = (byte) (checksum & 0xFF); // 低位字节
+        checksumBytes[1] = (byte) ((checksum >> 8) & 0xFF);
+
+        return checksumBytes;
+    }
+
+
+    public static  byte[] getCRC(String filePath) {
+        File file = new File(filePath);
+
+        int checksum = 0; // 初始化校验和
+
+        try {
+            InputStream inputStream = new FileInputStream(file);
+
+            int data;
+            while ((data = inputStream.read()) != -1) {
+                checksum += data; // 累加每个字节的值
+                // 或者使用 checksum ^= data; 来执行异或操作
+            }
+
+            inputStream.close(); // 关闭文件输入流
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+// 将校验和分成两个字节并存储在 byte[2] 数组中
+        byte[] checksumBytes = new byte[2];
+        checksumBytes[0] = (byte) (checksum & 0xFF); // 低位字节
+        checksumBytes[1] = (byte) ((checksum >> 8) & 0xFF);
+
+        return checksumBytes;
+    }
+
+
+   public static  byte[] Inttobyte(int abc){
+        // 将整数转化为两个字节数组
+        byte[] byteArray = new byte[2];
+        byteArray[0] = (byte) (abc & 0xFF); // 低位字节
+        byteArray[1] = (byte) ((abc >> 8) & 0xFF); // 高位字节
+       return byteArray;
+    }
+
+    public static  byte[] Longtobyte(int abc){
+        // 将整数转化为两个字节数组
+        byte[] byteArray = new byte[4];
+
+// 将int的每个字节提取并存储在byte数组中
+        byteArray[0] = (byte) (abc & 0xFF);          // 最低位字节
+        byteArray[1] = (byte) ((abc >> 8) & 0xFF);   // 第二个字节
+        byteArray[2] = (byte) ((abc >> 16) & 0xFF);  // 第三个字节
+        byteArray[3] = (byte) ((abc >> 24) & 0xFF);  // 最高位字节
+        return byteArray;
+    }
     public static int bytetoint(byte[] src, int srcIndex, int length) {
         byte[] dest = new byte[length];
         for (int i = 0; i < length; i++) {

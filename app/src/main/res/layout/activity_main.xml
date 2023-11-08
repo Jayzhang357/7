@@ -8,7 +8,19 @@
     android:background="@color/back"
     tools:context=".activity.MainActivity">
 
+    <RelativeLayout
+        android:id="@+id/rlerror"
+        android:layout_width="280dp"
+        android:layout_height="380dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_centerVertical="true">
 
+        <ViewFlipper
+            android:id="@+id/abMenuerror"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ViewFlipper>
+    </RelativeLayout>
 
 
     <RelativeLayout
@@ -238,6 +250,8 @@
         android:text="@string/mjgs"
         android:textSize="30dp" />
 
+
+
         <TextView
             android:id="@+id/textHeigh"
             android:layout_width="wrap_content"
@@ -249,6 +263,30 @@
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="@string/dsgd1" />
+
+    <TextView
+        android:id="@+id/textTime_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlltitlle"
+        android:layout_marginLeft="110dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="@string/time"
+        />
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlltitlle"
+        android:layout_toRightOf="@+id/textTime_tx"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+       />
 
     <RelativeLayout
         android:id="@+id/rlltitlle"
@@ -385,10 +423,17 @@
             android:background="@drawable/back_g1" android:gravity="center"
             >
 
-            <com.zhd.commoncontrol.MainBigImageControl
+            <ImageView
 
                 android:id="@+id/btnStlye"
-                style="@style/imaginview_btn_bottom"></com.zhd.commoncontrol.MainBigImageControl>
+
+                style="@style/imaginview_btn_bottom"
+                android:layout_alignParentEnd="true"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:src="@drawable/ic_error_white"></ImageView>
 
 
         </RelativeLayout>
@@ -512,19 +557,17 @@
         android:id="@+id/setJobRelate"
         android:layout_width="400dp"
         android:layout_height="420dp"
-        android:layout_centerInParent="true"
         android:layout_alignParentRight="true"
-        >
+        android:layout_centerInParent="true">
 
         <ImageView
             android:id="@+id/ic_arow_Right"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_centerInParent="true"
-
             android:layout_alignParentRight="true"
-            android:background="@color/purple_700"
-            />
+
+            android:layout_centerInParent="true"
+            android:background="@color/purple_700" />
 
         <ImageView
             android:id="@+id/ic_arow_Left"
@@ -534,15 +577,15 @@
             android:layout_centerInParent="true"
             android:background="@color/purple_700"
             android:visibility="invisible" />
+
         <RelativeLayout
-            android:background="@drawable/bg_frame"
             android:id="@+id/setJobRelate_1"
             android:layout_width="400dp"
             android:layout_height="350dp"
-
             android:layout_alignParentBottom="true"
+
             android:layout_toLeftOf="@+id/ic_arow_Right"
-            >
+            android:background="@drawable/bg_frame">
 
             <RelativeLayout
 
@@ -555,49 +598,47 @@
 
                 <ImageView
                     android:id="@+id/btndown"
-                    android:background="@drawable/back_g1"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_down"
-                    android:text="@string/sza"
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="10dp"
-                    ></ImageView>
+                    android:background="@drawable/back_g1"
+                    android:src="@drawable/ic_down"
+                    android:text="@string/sza"></ImageView>
 
                 <ImageView
                     android:id="@+id/btnup"
-                    android:background="@drawable/back_g1"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/ic_up"
-                    android:text="@string/sza"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="10dp"
-                    ></ImageView>
+                    android:background="@drawable/back_g1"
+                    android:src="@drawable/ic_up"
+                    android:text="@string/sza"></ImageView>
+
                 <EditText
                     android:id="@+id/EditHeight"
+                    style="@style/APNEditText"
                     android:layout_width="100dp"
                     android:layout_height="50dp"
-                    android:inputType="numberDecimal"
-                    style="@style/APNEditText"
                     android:layout_centerHorizontal="true"
-                    ></EditText>
+                    android:inputType="numberDecimal"></EditText>
+
                 <TextView
                     android:layout_width="50dp"
                     android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/EditHeight"
+                    android:gravity="center"
                     android:text="M"
                     android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:layout_toRightOf="@+id/EditHeight"
-                    ></TextView>
+                    android:textStyle="bold"></TextView>
             </RelativeLayout>
-                <ViewFlipper
-                    android:layout_marginTop="50dp"
-                    android:id="@+id/JobMenuerror"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"></ViewFlipper>
 
+            <ViewFlipper
+                android:id="@+id/JobMenuerror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"></ViewFlipper>
 
 
             <RelativeLayout
@@ -608,27 +649,26 @@
                 android:layout_alignParentBottom="true"
 
                 >
+
                 <Button
                     android:id="@+id/btnJS"
-                    android:background="@drawable/back_g1"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="10dp"
-
                     style="@style/gnss_setting_button_s"
                     android:layout_width="150dp"
-                    android:text="@string/js"
-                    ></Button>
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/back_g1"
+                    android:text="@string/js"></Button>
 
                 <Button
                     android:id="@+id/btnSave"
-                    android:background="@drawable/back_g1"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="10dp"
-
                     style="@style/gnss_setting_button_s"
                     android:layout_width="150dp"
-                    android:text="@string/save"
-                    ></Button>
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/back_g1"
+                    android:text="@string/save"></Button>
 
             </RelativeLayout>
 

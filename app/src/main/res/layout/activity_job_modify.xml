@@ -66,7 +66,7 @@
         android:layout_marginTop="200dp"
         android:focusable="false"
         android:layout_marginLeft="100dp"
-        android:text="@string/newbt_tx" />
+        android:text="@string/modifybt_tx" />
 
 
 
@@ -96,12 +96,14 @@
         android:padding="2dp">
 
         <GridView
+            android:enabled="false"
             android:id="@+id/gvField"
             style="@style/common_grid_style"
             android:layout_width="250dp"
             android:layout_height="330dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
+
             android:columnWidth="170dp"></GridView>
     </RelativeLayout>
 
@@ -119,6 +121,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
+
             android:id="@+id/tvsetting"
             style="@style/title_word"
             android:layout_height="wrap_content"

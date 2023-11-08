@@ -102,7 +102,7 @@ public class DataAdapter extends BaseAdapter {
         viewHolder.content4.setText(String.valueOf(info.Cover));
 
         viewHolder.content5.setText(String.valueOf(info.SetH));
-        viewHolder.content6.setText(String.valueOf(info.Sensitivity));
+        viewHolder.content6.setText(String.valueOf(info.Width));
 
 
 

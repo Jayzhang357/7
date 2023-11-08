@@ -13,6 +13,7 @@ public class MemberInfo {
     public String Cover;
     public String SetH;
     public String Sensitivity;
+    public String Width;
     public MemberInfo(){}
     public MemberInfo(int _id,String name,String jobtype, String Cover, String SetH,String Sensitivity){
         this._id = _id;
@@ -20,6 +21,7 @@ public class MemberInfo {
         this.jobtype = jobtype;
         this.Cover = Cover;
         this.SetH = SetH;
+        this.Width = Width;
 
         this.Sensitivity = Sensitivity;
         

@@ -2,27 +2,21 @@ package com.zhd.shj.activity;
 
 
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.InputType;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.Toast;
 
 import com.zhd.commonhelper.CommonUtil;
-import com.zhd.shj.AppManager;
-import com.zhd.shj.CommonHelper;
 import com.zhd.shj.R;
 import com.zhd.shj.boardcast.CommonBroadCast;
 import com.zhd.shj.business.Job;
@@ -30,11 +24,10 @@ import com.zhd.shj.entity.CommonEnum;
 import com.zhd.shj.entity.JobInfo;
 import com.zhd.shj.listviewadpter.CommonAdapter;
 
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JobManageActivity extends BaseActivity {
+public class ModifyActivity extends BaseActivity {
 
     private Button btnBack,btnFinish,rest;
     private GridView mGridView = null;
@@ -47,7 +40,7 @@ public class JobManageActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_job_manage);
+        setContentView(R.layout.activity_job_modify);
         iniView();
         Intent intent1 = getIntent();
 
@@ -189,8 +182,9 @@ public class JobManageActivity extends BaseActivity {
                     ecuprj_in.AbType = (int)mAdapter.getCurrentPosition();
                     ecuprj_in.IsSelected = CommonEnum.DbBoolean.True.getValue();
                     ecuprj_in.JobName = mEditText.getText().toString();
+                    ecuprj_in.Width=Double.parseDouble(etWidth.getText().toString());
                     mJob.update(ecuprj_in);
-                    Intent intent = new Intent(JobManageActivity.this, Project.class);
+                    Intent intent = new Intent(ModifyActivity.this, Project.class);
                     startActivity(intent);
                     finish();
                 }
@@ -200,7 +194,7 @@ public class JobManageActivity extends BaseActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(JobManageActivity.this, Project.class);
+                Intent intent = new Intent(ModifyActivity.this, Project.class);
                 startActivity(intent);
                 finish();
 

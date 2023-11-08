@@ -31,7 +31,7 @@ public class OpenFileDialog {
     static final public String sFolder = ".";
     static final public String sEmpty = "";
     static final private String sOnErrorMsg = "No rights to access!";
-
+    static  public String spath =  "/";
     // 参数说明
     // context:上下文
     // dialogid:对话框ID

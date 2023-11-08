@@ -37,8 +37,9 @@ public class JobInfo implements Serializable {
 	public double CPointB = 0.0d;
 	public double CPointL = 0.0d;
 	public double CPointH = 0.0d;
-
 	public double setH=0.0d;
+	public double setHsmall=0.0d;
+	public double Width=5.0d;
 	public String RecordTableName = "";
 	public float CoverageArea = 0;
 	public int IsSelected = CommonEnum.DbBoolean.False.getValue();

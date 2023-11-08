@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.zhd.shj">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -69,9 +74,19 @@
         <activity
             android:name=".activity.Difference"
             android:exported="false"></activity>
+
+        <activity
+            android:name=".activity.ModifyActivity"
+            android:exported="false"></activity>
+
+
         <activity
             android:name=".activity.Update"
-            android:exported="false"></activity>
+           >
+
+
+
+        </activity>
         <activity
             android:name=".activity.Recover"
             android:exported="false"></activity>

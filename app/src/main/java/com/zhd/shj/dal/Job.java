@@ -54,6 +54,8 @@ public class Job extends BaseDAL {
         jobInfo.CPointL = (cursor.getDouble(cursor.getColumnIndex("CPointL")));
         jobInfo.CPointH = (cursor.getDouble(cursor.getColumnIndex("CPointH")));
         jobInfo.setH = (cursor.getDouble(cursor.getColumnIndex("setH")));
+        jobInfo.setHsmall = (cursor.getDouble(cursor.getColumnIndex("setHsmall")));
+        jobInfo.Width = (cursor.getDouble(cursor.getColumnIndex("Width")));
         jobInfo.Sensitivity = (cursor.getDouble(cursor.getColumnIndex("Sensitivity")));
         jobInfo.RecordTableName = (cursor.getString(cursor
                 .getColumnIndex("RecordTableName")));

@@ -210,6 +210,7 @@ public class DrawCoverView extends View {
                             }
                             //     Log.e("作图颜色",(mCurrentRecordDrawOffsetMapTemp.get(i).H-setH)+";"+i+";"+mCurrentRecordDrawOffsetMapTemp.get(i).SegmentIndex );
                             paint.setStrokeWidth(AppHelper.RATIO_VALUE*AppHelper.width);
+
                             paint.setStyle(Paint.Style.FILL_AND_STROKE);
                             paint.setDither(true);
                             canvas.drawLine((float) mCurrentRecordDrawOffsetMapTemp.get(i).B, (float) mCurrentRecordDrawOffsetMapTemp.get(i).L, (float) mCurrentRecordDrawOffsetMapTemp.get(i - 1).B, (float) mCurrentRecordDrawOffsetMapTemp.get(i - 1).L, paint);

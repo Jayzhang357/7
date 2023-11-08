@@ -19,9 +19,12 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
+       /* google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
+        jcenter() // Warning: this repository is going to shut down soon*/
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
     }
 }
 

@@ -253,7 +253,7 @@ public class Project extends BaseActivity {
                         // 设置AB类型和作业名称
 
 
-                        Intent intent = new Intent(Project.this, JobManageActivity.class);
+                        Intent intent = new Intent(Project.this, ModifyActivity.class);
 
                         intent.putExtra("ecuprj_modify", jobInfo);
 
@@ -572,7 +572,7 @@ public class Project extends BaseActivity {
             abc.SetH = jobInfo.setH+"";
 
 
-            abc.Sensitivity= jobInfo.Sensitivity+"";
+            abc.Width= jobInfo.Width+"";
             abc.Cover= CommonHelper.decimalFormat
                     .format(jobInfo.CoverageArea);
             abc.jobtype= getResources().getStringArray(R.array.Job_Type)[jobInfo.AbType];
